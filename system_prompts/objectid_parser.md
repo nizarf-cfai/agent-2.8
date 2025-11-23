@@ -57,7 +57,7 @@ Context contains: id "dashboard-item-chronomed-2"
 → Output:
 {"objectId": "dashboard-item-chronomed-2"}
 
-User Query: "open labs"
+User Query: "latest lab result"
 Context contains:
 - "dashboard-item-1759906246155-lab-table"
 - "dashboard-item-1759906246156-lab-chart"
@@ -73,9 +73,16 @@ Context contains:
 
 User Query: "lastest encounter"
 Context contains:
-- "dashboard-item-1759906300004-single-encounter-6"
+- "dashboard-item-1759906300004-single-encounter-7"
 → Output:
-{"objectId": "dashboard-item-1759906300004-single-encounter-6"}
+{"objectId": "dashboard-item-1759906300004-single-encounter-7"}
+
+User Query: "first encounter"
+Context contains:
+- "dashboard-item-1759906300003-single-encounter-1"
+→ Output:
+{"objectId": "dashboard-item-1759906300003-single-encounter-1"}
+
 
 ```
 
