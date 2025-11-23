@@ -1,0 +1,257 @@
+{
+    "identification_verification" : {
+        "patient_id": "SM43850603",
+        "patient_name" : "Sarah Miller",
+        "dob" : "1981-06-03",
+        "mrn" : "SM43850603",
+        "forms" : [
+            {
+                "form_id" : "1a",
+                "checks" : true,
+                "notes" : ""
+            },
+            {
+                "form_id" : "1b",
+                "checks" : true,
+                "notes" : "Bristol North Family Practice, Dr P. StevensNotes: GP practice initiated MTX monitoring andperformed first abnormal LFT assessment."
+            },
+            {
+                "form_id" : "1c",
+                "checks" : true,
+                "notes" : "Patient was fully alert, oriented to time, place, person.Demonstrated accurate understanding of her condition (“My liver numbers are high because of the methotrexate”)."
+            },
+            {
+                "form_id" : "1d",
+                "checks" : true,
+                "notes" : "NOK: Husband – Daniel Miller (07782 113847)Notes: Contact details confirmed and updated in ED system."
+            },
+            {
+                "form_id" : "1e",
+                "checks" : true,
+                "notes" : "21 Hawthorne Road, Bristol BS4 8QPNotes: Matches GP record and patient verbal confirmation."
+            }
+        ]
+    },
+    "compliant_consent": {
+        "forms":[
+            {
+                "form_id" : "2a",
+                "checks" : true,
+                "notes" : "'Risks discussed included hepatotoxicity, severe DILI, bone marrow suppression, increased infection risk, methotrexate pneumonitis, mucositis, nausea/vomiting, and teratogenicity.\nPatient-specific risk modifiers:\nKnown MASLD/MASH on prior ultrasound\nOverweight (BMI ~31)\nT2DM with mild hyperglycaemia\nRegular NSAID use for joint pain\nPrior mildly elevated ALT before MTX initiation\n\nPatient acknowledged understanding that her liver disease increased her risk of MTX injury."
+            },
+            {
+                "form_id" : "2b",
+                "checks" : true,
+                "notes" : "'Details: Hydroxychloroquine, Sulfasalazine, Leflunomide, and biologic DMARDs were discussed. Patient declined biologics at the time due to concerns about injections and infection risk.'"
+            },
+            {
+                "form_id" : "2c",
+                "checks" : true,
+                "notes" : "'Patient Response (verbatim):\n“If my eyes or skin go yellow, or if I feel very sick or lose my appetite, I must stop methotrexate right away and tell the GP.”\nInterpretation: Patient demonstrated good understanding."
+            },
+            {
+                "form_id" : "2d",
+                "checks" : true,
+                "notes" : "'At ALT 185 U/L (≈4.6 × ULN), national MTX guidance requires immediate cessation, but the GP opted to reduce dose from 10mg to 5mg, citing RA flare and normal INR.\nNo documentation shows the patient was informed that continuing MTX at any dose was outside standard safety guidance."
+            }
+        ]
+    },
+    "mental_capacity" : {
+        "forms":[
+            {
+                "form_id" : "3a",
+                "checks" : true,
+                "notes" : "'Reason: Marked jaundice and nausea prompted assessment."
+            },
+            {
+                "form_id" : "3b",
+                "checks" : true,
+                "notes" : "'Outcome: No impairment of mind/brain; retained and weighed all information."
+            }
+        ]
+    },
+    "duty_candour":{
+        "forms":[
+            {
+                "form_id" : "4a",
+                "checks" : true,
+                "notes" : "'Nature of Harm:\nSevere hepatocellular DILI\nJaundice (T-bili significantly elevated)\nHospital admission required\nRisk of hepatic failure\nPreventability factor: delayed MTX cessation\n"
+            },
+            {
+                "form_id" : "4b",
+                "checks" : true,
+                "notes" : "'Notes: GP expressed regret for delayed cessation and explained how earlier withdrawal might have prevented deterioration."
+            },
+            {
+                "form_id" : "4c",
+                "checks" : true,
+                "notes" : "'Patient was advised that persisting with MTX after significant ALT rise likely contributed to further liver injury."
+            },
+            {
+                "form_id" : "4d",
+                "checks" : true,
+                "notes" : "'Notes: Required but not found in any record. Should be generated and sent to patient."
+            }
+        ]
+    },
+    "guideline_adherence" : {
+        "forms":[
+            {
+                "form_id" : "5a",
+                "checks" : true,
+                "notes" : "'Details:\nDiagnosis and management consistent with EASL DILI 2023\nMASLD considerations per BSG 2024\nAppropriate fibrosis risk assessment planned\n"
+            },
+            {
+                "form_id" : "5b",
+                "checks" : true,
+                "notes" : "'GP note: “Will reduce dose and re-check bloods, RA flaring.”\nNo documentation referencing national MTX safety thresholds or rationale for deviating from them.\n"
+            },
+            {
+                "form_id" : "5c",
+                "checks" : true,
+                "notes" : "'Raw Explanation:\nAt ALT >3× ULN, immediate cessation is mandatory. GP reduced dose instead. INR normal but irrelevant to hepatocellular toxicity. This exposed patient to avoidable ongoing injury.\n"
+            }
+        ]
+    },
+    "red_flags_diagnosis" : {
+        "flag_list" : [
+        {
+            "flag" : "Viral hepatitis excluded",
+            "notes" : "HBV sAg, HBcAb, HCV Ab negative."
+        },
+        {
+            "flag" : "Autoimmune hepatitis excluded",
+            "notes" : "ANA, ASMA negative; IgG normal."
+        },
+        {
+            "flag" : "Obstruction excluded",
+            "notes" : "Ultrasound with normal CBD (4mm), no gallstones."
+        },
+        {
+            "flag" : "Alcoholic hepatitis excluded",
+            "notes" : "History inconsistent; LFT pattern hepatocellular."
+        },
+        {
+            "flag" : "Sepsis ruled out",
+            "notes" : "No fever, normal WBC, stable vitals."
+        },
+        {
+            "flag" : "Ischaemic hepatitis excluded",
+            "notes" : "No hypotension, lactate normal."
+        },
+        {
+            "flag" : "Metabolic causes excluded",
+            "notes" : "No Wilson’s risk; age >40."
+        }
+        ],
+        "diagnosis" : "MTX-induced hepatocellular DILI (RUCAM score = 9, “highly probable”) superimposed on pre-existing MASH."
+    },
+    "procedural" : {
+        "forms":[
+            {
+                "form_id" : "7a",
+                "checks" : null,
+                "notes" : "Notes: ID confirmed; indications reviewed; allergies checked"
+            },
+            {
+                "form_id" : "7b",
+                "checks" : null,
+                "notes" : "INR: 1.1 Notes: No bleeding risk; safe for abdominal ultrasound."
+            },
+            {
+                "form_id" : "7c",
+                "checks" : null,
+                "notes" : "'Dosing Details:\n\n150 mg/kg → 50 mg/kg → 100 mg/kg\n\nNo anaphylactoid response\n\nCompleted fully\n"
+            },
+            {
+                "form_id" : "7d",
+                "checks" : null,
+                "notes" : "'Details:\n\nGCS 15 throughout\n\nNo HE\n\nLFTs trended daily (ALT extremely elevated but stable trajectory under NAC)\n"
+            }
+        ]
+    },
+    "safety_net" : {
+        "forms":[
+            {
+                "form_id" : "8a",
+                "checks" : true,
+                "notes" : "Notes: MTX added to allergy/contraindicated list."
+            },
+            {
+                "form_id" : "8b",
+                "checks" : null,
+                "notes" : "'Advice Given:\nImmediate ED return if:\n\nJaundice worsens\n\nVomiting persists\n\nMental status changes\n\nSevere abdominal pain\n\nBlack stool or GI bleed\n\nFever\n\nReduced urine output\n"
+            },
+            {
+                "form_id" : "8c",
+                "checks" : null,
+                "notes" : "'Method: Teach-back; patient accurately repeated red-flag symptoms."
+            }
+        ]
+    },
+    "communication" : {
+        "forms":[
+            {
+                "form_id" : "9a",
+                "checks" : true,
+                "notes" : "Method: Nervecentre automatic report + hepatology outcome letter."
+            },
+            {
+                "form_id" : "9b",
+                "checks" : true,
+                "notes" : "Received By: ED medical registrar Summary: “Suspected severe MTX DILI, urgent NAC indicated.”"
+            },
+            {
+                "form_id" : "9c",
+                "checks" : true,
+                "notes" : "Critical Abnormalities: ALT 185 → 490; bilirubin significantly raised; ALT >25× ULN at admission"
+            }
+        ]
+    },
+    "attendance": {
+        "checks" : true,
+        "forms":[
+            {
+                "appointment" : "",
+                "notes" : ""
+            },
+            {
+                "appointment" : "",
+                "notes" : ""
+            }
+        ]
+    },
+    "practitioner" : {
+        "forms" : [
+            {
+                "form_id" : "11a",
+                "checks" : true,
+                "notes" : ""
+            },
+            {
+                "form_id" : "11b",
+                "checks" : true,
+                "notes" : "Notes: MTX monitoring and NAC administration appropriate for GP/ED/hepatology."
+            }
+        ]
+    },
+    "incident": {
+        "forms" : [
+            {
+                "form_id" : "12a",
+                "checks" : true,
+                "notes" : "Incident Description: Delayed cessation of methotrexate despite ALT rising to ~185 U/L (≈4.6× ULN). This represents deviation from MTX monitoring safety standards and likely contributed to subsequent severe DILI requiring admission."
+            },
+            {
+                "form_id" : "12b",
+                "checks" : true,
+                "notes" : "Notes: No evidence of DATIX in system. Should be completed for governance learning regarding MTX monitoring compliance."
+            }
+        ]
+    },
+    "signature" : {
+        "patient_signature" : "Sarah Miller",
+        "practitioner_signature" : "Dr. P. Stevens"
+    }
+    
+}

@@ -1,0 +1,10 @@
+aiohttp
+DrissionPage
+pyautogui
+pillow
+google-generativeai
+python-dotenv
+fastapi 
+uvicorn
+pyaudio
+google-genai

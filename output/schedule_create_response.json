@@ -1,0 +1,56 @@
+{
+    "id": "dashboard-item-1763703299535-scheduling-panel",
+    "type": "component",
+    "x": 6800,
+    "y": -2240,
+    "width": 600,
+    "height": "auto",
+    "componentType": "SchedulingPanel",
+    "color": "#ffffff",
+    "description": "Integrated scheduling and investigation ordering panel",
+    "content": {
+        "title": "Care Coordination & Scheduling",
+        "component": "SchedulingPanel",
+        "props": {
+            "patientId": "SM43850603",
+            "currentStatus": "Post-Acute Discharge (Stable)",
+            "schedulingContext": {
+                "nextAvailableSlot": {
+                    "date": "2025-12-15T09:30:00",
+                    "provider": "Dr. R. Sharma (Hepatology) & Dr. R. Hall (Rheumatology)",
+                    "clinicType": "Joint Liver/Rheum Complexity Clinic",
+                    "location": "Outpatient Zone C, Room 12",
+                    "wait_time": "~4 weeks"
+                },
+                "outstandingInvestigations": [
+                    {
+                        "id": "INV-FS-001",
+                        "name": "Transient Elastography (Fibroscan)",
+                        "status": "Pending Request",
+                        "priority": "Routine (6-month post-injury check)",
+                        "notes": "Assess for residual fibrosis following June 2025 DILI event"
+                    },
+                    {
+                        "id": "INV-VS-002",
+                        "name": "Confirmatory Viral Serology (Repeat)",
+                        "status": "Pending Request",
+                        "priority": "Routine",
+                        "notes": "Final exclusion of occult viral hepatitis"
+                    }
+                ],
+                "bookingAction": {
+                    "status": "Confirmed",
+                    "lastUpdated": "2025-11-20T10:05:00Z",
+                    "actionsTaken": [
+                        "Slot secured: 2025-12-15 @ 09:30",
+                        "Fibroscan request generated (Accession #FS-251215-09)",
+                        "Invitation letter generated and sent via Patient Portal"
+                    ],
+                    "correspondencePreview": "Dear Sarah Miller, your follow-up appointment for Liver Function Review has been scheduled for December 15, 2025..."
+                }
+            }
+        }
+    },
+    "createdAt": "2025-11-21T05:34:59.840Z",
+    "updatedAt": "2025-11-21T05:34:59.840Z"
+}

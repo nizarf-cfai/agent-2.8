@@ -1,0 +1,3 @@
+{
+    "error": "range must have valid min and max values where min < max"
+}

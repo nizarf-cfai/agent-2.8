@@ -1,0 +1,97 @@
+{
+    "patientData": {
+        "name": "Sarah Miller",
+        "mrn": "MC-001001",
+        "age_sex": "63-year-old Female",
+        "date_of_summary": "2025-10-14",
+        "one_sentence_impression": "Acute liver injury likely DILI and/or severe methotrexate toxicity in a patient with rheumatoid arthritis, hypertension, and CKD.",
+        "clinical_context_baseline": {
+            "comorbidities": [
+                "Rheumatoid arthritis",
+                "Essential hypertension",
+                "Mild chronic kidney disease"
+            ],
+            "key_baseline_labs": "Baseline labs (2015-2021) show normal LFTs, Creatinine ~0.9-1.4 mg/dL, eGFR ~58-85 mL/min/1.73m2.",
+            "social_history": "Drinks ~1–2 beers/day (7–14 units/week). Smoked ~1 pack/day (35 pack-year history), quit in 2017. Retired carpenter."
+        },
+        "suspect_drug_timeline": {
+            "chief_complaint": "Severe fatigue, jaundice, epigastric pain, confusion.",
+            "hopi_significant_points": "63-year-old female with RA, HTN, CKD presented with 24h severe fatigue, jaundice, epigastric pain, confusion. Started TMP-SMX 6 days prior for sinusitis. Noted mouth ulcers 4-6 days ago. Recent labs show markedly elevated LFTs and bilirubin.",
+            "chronic_medications": [
+                "Methotrexate 20 mg weekly",
+                "Folic Acid 5 mg weekly",
+                "Lisinopril 10 mg daily"
+            ],
+            "acute_medication_onset": "Trimethoprim-Sulfamethoxazole 800/160 mg BID started 2025-06-15.",
+            "possibilities_for_dili": [
+                "Trimethoprim-Sulfamethoxazole",
+                "Methotrexate"
+            ]
+        },
+        "rule_out_complete": {
+            "viral_hepatitis": "Pending serology.",
+            "autoimmune": "No specific workup mentioned beyond RUCAM. No prior history.",
+            "other_competing_dx_ruled_out": "No fever or hemodynamic instability to suggest ischemic or septic hepatitis. No autoimmune or metabolic history."
+        },
+        "injury_pattern_trends": {
+            "pattern": "Hepatocellular injury (ALT/AST >> Alk Phos).",
+            "hys_law": "Meets Hy's Law criteria with ALT/AST >20x ULN and Total Bilirubin >3x ULN.",
+            "meld_na": "Not calculable from provided data, but high bilirubin and INR suggest severe injury.",
+            "lft_data_peak_onset": {
+                "ALT": "1650 U/L",
+                "AST": "2100 U/L",
+                "Alk_Phos": "350 U/L",
+                "T_Bili": "12.5 mg/dL",
+                "INR": "1"
+            },
+            "lft_sparklines_trends": "Baseline LFTs were normal. Acute elevation noted on 2025-06-21.",
+            "complications": [
+                "Hepatic Encephalopathy (confusion, disorientation, asterixis, GCS 13)",
+                "Acute Liver Failure"
+            ],
+            "noh_graz_law": "Not applicable (not paracetamol toxicity)."
+        },
+        "severity_prognosis": {
+            "severity_features": [
+                "Jaundice",
+                "Hepatic Encephalopathy",
+                "Marked Transaminitis",
+                "INR 1 (but low WBC and platelets noted in ED)"
+            ],
+            "prognosis_statement": "Patient meets criteria for acute liver failure, a life-threatening condition requiring intensive management and monitoring for potential liver transplantation."
+        },
+        "key_diagnostics": {
+            "imaging_performed": "Point-of-care ultrasound of IVC performed, showing minimally collapsible IVC.",
+            "biopsy": "Not mentioned.",
+            "methotrexate_level": "Ordered urgently on 2025-06-21."
+        },
+        "management_monitoring": {
+            "stopped_culprit_drugs": [
+                "Methotrexate",
+                "Trimethoprim-Sulfamethoxazole"
+            ],
+            "active_treatments": [
+                "N-acetylcysteine",
+                "IV fluids"
+            ],
+            "consults_initiated": [
+                "Hepatology",
+                "Gastroenterology",
+                "Hematology",
+                "Intensive Care Unit (ICU) admission"
+            ],
+            "nutrition": "NPO initially.",
+            "vte_ppx": "Not mentioned.",
+            "causality_rucam": "RUCAM score is 7, categorized as 'Probable' for TMP-SMX as the primary culprit and Methotrexate as a significant co-factor.",
+            "monitoring_plan": [
+                "Frequent neuro checks",
+                "Liver function tests",
+                "CBC",
+                "Coagulation panel",
+                "Renal function tests",
+                "Methotrexate levels"
+            ]
+        },
+        "current_status_last_48h": "Patient presented with acute liver failure and encephalopathy on 2025-06-21. Management initiated with discontinuation of offending agents, NAC, and ICU admission. Current status and trends are not detailed beyond initial presentation."
+    }
+}

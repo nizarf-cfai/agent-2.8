@@ -1,0 +1,62 @@
+{
+    "patientData": {
+        "name": "Sarah Miller",
+        "date_of_birth": "1962-03-15",
+        "age": 63,
+        "sex": "Female",
+        "mrn": "MC-001001",
+        "primaryDiagnosis": "Rheumatoid arthritis",
+        "problem_list": [
+            {
+                "name": "Rheumatoid arthritis",
+                "status": "active"
+            },
+            {
+                "name": "Essential hypertension",
+                "status": "active"
+            },
+            {
+                "name": "Mild chronic kidney disease",
+                "status": "active"
+            }
+        ],
+        "allergies": [
+            "Penicillin (rash)"
+        ],
+        "medication_history": [
+            {
+                "name": "Methotrexate",
+                "dose": "20 mg"
+            },
+            {
+                "name": "Folic Acid",
+                "dose": "5 mg"
+            },
+            {
+                "name": "Lisinopril",
+                "dose": "10 mg"
+            },
+            {
+                "name": "Trimethoprim-Sulfamethoxazole",
+                "dose": "800/160 mg"
+            }
+        ],
+        "acute_event_summary": "Patient presented with severe fatigue, jaundice, epigastric pain, and confusion following initiation of Trimethoprim-Sulfamethoxazole, leading to a diagnosis of acute liver injury likely due to DILI and/or methotrexate toxicity.",
+        "diagnosis_acute_event": [
+            "Drug-Induced Liver Injury (DILI)",
+            "Hepatic Encephalopathy",
+            "Acute Liver Failure",
+            "Methotrexate Toxicity"
+        ],
+        "causality": "The patient developed acute jaundice, confusion, and hepatic tenderness shortly after initiating TMP-SMX, a timeline strongly suggestive of idiosyncratic hepatocellular DILI. Mechanistically, TMP-SMX can potentiate methotrexate toxicity by increasing free methotrexate levels and impairing folate metabolism. The clinical pattern is hepatocellular, and the presence of encephalopathy with presumed INR >1.5 and elevated bilirubin meets criteria for acute liver failure. RUCAM analysis suggests TMP-SMX as the primary culprit with methotrexate as a significant co-factor.",
+        "management_recommendations": [
+            "Withdrawal of both Methotrexate and Trimethoprim-Sulfamethoxazole",
+            "Initiation of N-acetylcysteine",
+            "Aggressive supportive care",
+            "ICU-level monitoring",
+            "STAT labs including CBC, Comprehensive Metabolic Panel, Methotrexate level, viral hepatitis serologies, coagulation panel",
+            "STAT abdominal ultrasound",
+            "Consultation with GI/Hepatology and Hematology"
+        ]
+    }
+}

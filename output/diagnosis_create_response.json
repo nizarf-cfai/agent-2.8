@@ -1,0 +1,191 @@
+{
+    "id": "item-1763362896865-1lmmaz",
+    "type": "diagnostic-report",
+    "x": -390,
+    "y": 7210,
+    "width": 2400,
+    "height": 900,
+    "content": "Diagnostic Report",
+    "color": "#ffffff",
+    "rotation": 0,
+    "diagnosticData": {
+        "patientInformation": {
+            "name": "Sarah Miller",
+            "mrn": "MC-001001",
+            "dateOfBirth": "1962-03-15",
+            "age": 63,
+            "sex": "Female"
+        },
+        "presentingComplaint": "Severe fatigue, jaundice, epigastric pain, confusion",
+        "medicalHistory": {
+            "conditions": [
+                "Rheumatoid arthritis",
+                "Essential hypertension",
+                "Mild chronic kidney disease"
+            ],
+            "allergies": [
+                "Penicillin (rash)"
+            ],
+            "socialHistory": "Drinks ~1\n–2 beers/day (7\n–14 units/week); denies bingeing. Smoked ~1 pack/day (35 pack-year history); quit in 2017."
+        },
+        "medications": {
+            "chronicPriorToEvent": [
+                "Methotrexate 20 mg weekly",
+                "Folic Acid 5 mg weekly",
+                "Lisinopril 10 mg daily"
+            ],
+            "initiatedAtAcuteEvent": "Trimethoprim-Sulfamethoxazole 800/160 mg BID"
+        },
+        "keyLaboratoryFindings": {
+            "encounterDate": "2025-06-21",
+            "results": [
+                {
+                    "test": "ALT",
+                    "value": "1650 U/L",
+                    "flag": "H",
+                    "reference": "7.0 - 56",
+                    "note": "↑↑↑"
+                },
+                {
+                    "test": "AST",
+                    "value": "2100 U/L",
+                    "flag": "H",
+                    "reference": "8.0 - 40",
+                    "note": "↑↑↑↑"
+                },
+                {
+                    "test": "ALP",
+                    "value": "350 U/L",
+                    "flag": "H",
+                    "reference": "40 - 150",
+                    "note": "↑↑"
+                },
+                {
+                    "test": "Total Bilirubin",
+                    "value": "12.5 mg/dL",
+                    "flag": "H",
+                    "reference": "0.2 - 1.2",
+                    "note": "↑↑↑↑"
+                },
+                {
+                    "test": "INR",
+                    "value": "1",
+                    "flag": "",
+                    "reference": "0.8 - 1.2",
+                    "note": "Normal"
+                }
+            ]
+        },
+        "diagnosis": {
+            "main": "Drug-Induced Liver Injury (DILI) and Methotrexate Toxicity",
+            "causality": "Acute liver injury likely due to TMP-SMX and Methotrexate toxicity. Patient developed jaundice, confusion, and hepatic tenderness shortly after initiating TMP-SMX while on chronic Methotrexate therapy.",
+            "mechanism": "TMP-SMX can raise free methotrexate levels and impair folate metabolism, potentiating hepatocellular necrosis. Synergistic hepatotoxicity between TMP-SMX and Methotrexate is suspected."
+        },
+        "differentialDiagnosisTracker": {
+            "diagnoses": [
+                {
+                    "name": "Drug-Induced Liver Injury (DILI)",
+                    "status": "PRIMARY",
+                    "notes": "Highly probable given timing of TMP-SMX initiation and clinical presentation."
+                },
+                {
+                    "name": "Methotrexate Toxicity",
+                    "status": "PRIMARY",
+                    "notes": "Concomitant drug, known hepatotoxic, interacts with TMP-SMX."
+                },
+                {
+                    "name": "Acute viral hepatitis",
+                    "status": "INVESTIGATE",
+                    "notes": "Pending serology."
+                },
+                {
+                    "name": "Severe methotrexate toxicity",
+                    "status": "INVESTIGATE",
+                    "notes": "Pancytopenia and renal injury present; hepatic injury prominent."
+                },
+                {
+                    "name": "Acute decompensation of undiagnosed chronic liver disease",
+                    "status": "PENDING",
+                    "notes": "No prior history, but considered."
+                },
+                {
+                    "name": "Sepsis with multiorgan dysfunction",
+                    "status": "PENDING",
+                    "notes": "No fever or hemodynamic instability reported, but considered in context of ALF."
+                }
+            ],
+            "ruledOut": []
+        },
+        "easlAssessment": {
+            "overallImpression": "Sarah Miller, a 63-year-old female with a history of rheumatoid arthritis, hypertension, and mild CKD, presented with acute jaundice, epigastric pain, and confusion. Her presentation is highly suggestive of drug-induced liver injury (DILI), likely a severe hepatocellular pattern, with a strong temporal association to the initiation of Trimethoprim-Sulfamethoxazole (TMP-SMX) while on chronic Methotrexate (MTX) therapy. The clinical picture, including encephalopathy and significant transaminitis, meets criteria for acute liver failure.",
+            "diliDiagnosticCriteriaMet": [
+                {
+                    "criterion": "ALT ≥ 5 × ULN",
+                    "status": "MET",
+                    "details": "ALT is 1650 U/L, with an assumed ULN of 56 U/L, which is > 5x ULN (specifically, 29.46x ULN)."
+                },
+                {
+                    "criterion": "ALT ≥ 3 × ULN with bilirubin ≥ 2 × ULN",
+                    "status": "MET",
+                    "details": "ALT is 1650 U/L (>3x ULN) and Total Bilirubin is 12.5 mg/dL, with an assumed ULN of 1.2 mg/dL, which is > 2x ULN (specifically, 10.42x ULN)."
+                },
+                {
+                    "criterion": "Alkaline Phosphatase ≤ 2 × ULN",
+                    "status": "NOT MET",
+                    "details": "Alkaline Phosphatase is 350 U/L, with an assumed ULN of 150 U/L, which is 2.33x ULN. While this is slightly above the 2x ULN threshold, the marked elevation in ALT and Bilirubin strongly points to a hepatocellular pattern of injury."
+                }
+            ],
+            "causativeAgentAssessment": [
+                {
+                    "agent": "Trimethoprim-Sulfamethoxazole (TMP-SMX)",
+                    "role": "HIGHLY SUSPECTED PRIMARY TRIGGER",
+                    "rationale": "Temporal association: TMP-SMX was started on 2025-06-15, and symptoms (fatigue, jaundice, epigastric pain, confusion) began around 2025-06-20, with presentation on 2025-06-21. Known hepatotoxicity: TMP-SMX is a known cause of idiosyncratic DILI. Interaction with Methotrexate: TMP-SMX can inhibit renal excretion and metabolism of methotrexate, increasing its serum levels and toxicity, which is consistent with the concurrent findings and patient history of mouth ulcers and pancytopenia (implied by low WBC and platelets in ED note)."
+                },
+                {
+                    "agent": "Methotrexate (MTX)",
+                    "role": "SIGNIFICANT CO-FACTOR",
+                    "rationale": "Chronic use: Patient has been on MTX for several years, with a dose increase to 20 mg weekly in 2018. Known hepatotoxicity: MTX is known to cause DILI, particularly with long-term use or high doses, and can be exacerbated by other medications. Synergistic toxicity: The interaction with TMP-SMX, as described above, significantly increases the risk and severity of liver injury."
+                },
+                {
+                    "agent": "Lisinopril",
+                    "role": "UNLIKELY",
+                    "rationale": "Lisinopril has been used chronically for hypertension without prior indication of liver toxicity. No temporal association or known significant interaction with MTX or TMP-SMX that would specifically cause this acute liver injury pattern."
+                },
+                {
+                    "agent": "Folic Acid",
+                    "role": "UNLIKELY",
+                    "rationale": "Folic acid is a supplement used to mitigate MTX side effects and is not known to cause DILI."
+                }
+            ],
+            "severityAssessment": {
+                "overallSeverity": "SEVERE DILI (Acute Liver Failure)",
+                "features": [
+                    "Jaundice (Total Bilirubin 12.5 mg/dL)",
+                    "Hepatic Encephalopathy (Confusion, disorientation, asterixis, GCS 13)",
+                    "Marked Transaminitis (ALT 1650 U/L, AST 2100 U/L)",
+                    "Coagulopathy (INR 1, but low WBC and Platelets mentioned in ED note, suggesting systemic toxicity)"
+                ],
+                "prognosisNote": "The patient meets criteria for acute liver failure due to the presence of jaundice, encephalopathy, and significant liver enzyme elevations. This is a life-threatening condition requiring intensive management and close monitoring for potential need for liver transplantation."
+            },
+            "exclusionOfAlternativeCausesRequired": [
+                "Acute viral hepatitis (HAV, HBV, HCV, HEV)",
+                "Autoimmune hepatitis",
+                "Alcohol-related liver disease",
+                "Ischemic hepatitis",
+                "Sepsis-related liver injury"
+            ],
+            "localGuidelinesComparison": {
+                "status": "GAP IDENTIFIED",
+                "details": "No specific local guidelines for DILI assessment were provided. The assessment is based solely on EASL guidelines."
+            },
+            "references": [
+                "EASL Clinical Practice Guidelines: Drug-Induced Liver Injury – Diagnostic Criteria",
+                "EASL Clinical Practice Guidelines: Drug-Induced Liver Injury – Severity Assessment",
+                "EASL Clinical Practice Guidelines: Drug-Induced Liver Injury – Causality Assessment (RUCAM)"
+            ]
+        },
+        "zone": "dili-analysis-zone"
+    },
+    "createdAt": "2025-11-17T07:01:36.870Z",
+    "updatedAt": "2025-11-17T07:01:36.870Z"
+}

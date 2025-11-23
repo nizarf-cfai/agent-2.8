@@ -1,0 +1,94 @@
+{
+    "pattern": {
+        "classification": "Hepatocellular",
+        "R_ratio": 15.9,
+        "keyLabs": [
+            {
+                "label": "ALT",
+                "value": "1650 U/L",
+                "note": "↑↑↑"
+            },
+            {
+                "label": "AST",
+                "value": "2100 U/L",
+                "note": "↑↑↑"
+            },
+            {
+                "label": "ALP",
+                "value": "350 U/L",
+                "note": "↑↑"
+            },
+            {
+                "label": "Total Bilirubin",
+                "value": "12.5 mg/dL",
+                "note": "↑↑↑"
+            },
+            {
+                "label": "INR",
+                "value": "1",
+                "note": "Normal"
+            }
+        ],
+        "clinicalFeatures": [
+            "Severe fatigue",
+            "Jaundice",
+            "Epigastric pain",
+            "Confusion",
+            "Oral mucosal ulcerations"
+        ]
+    },
+    "causality": {
+        "primaryDrug": "Trimethoprim-Sulfamethoxazole",
+        "contributingFactors": [
+            "Methotrexate use",
+            "Age 63",
+            "Chronic kidney disease",
+            "Alcohol use (1-2 beers/day)"
+        ],
+        "mechanisticRationale": [
+            "TMP-SMX can increase free methotrexate levels.",
+            "TMP-SMX can impair folate metabolism.",
+            "Combined toxicity potentiates hepatocellular necrosis.",
+            "Idiosyncratic hepatocellular DILI is suggested by the timeline."
+        ]
+    },
+    "severity": {
+        "features": [
+            "Hepatic Encephalopathy (confusion, asterixis)",
+            "Coagulopathy (INR 1, borderline but labs in setting of severe injury)",
+            "Marked jaundice (Total Bilirubin 12.5 mg/dL)",
+            "Very high transaminases (ALT 1650 U/L, AST 2100 U/L)"
+        ],
+        "prognosis": "Severe, meets criteria for acute liver failure."
+    },
+    "management": {
+        "immediateActions": [
+            "Withdraw Methotrexate",
+            "Withdraw Trimethoprim-Sulfamethoxazole",
+            "Initiate N-acetylcysteine",
+            "Admit to ICU",
+            "Aggressive supportive care"
+        ],
+        "consults": [
+            "Hepatology",
+            "Gastroenterology",
+            "Hematology"
+        ],
+        "monitoringPlan": [
+            "STAT labs including CBC, CMP, coagulation panel, Methotrexate level",
+            "Frequent neurological checks",
+            "Vital signs monitoring",
+            "Liver function tests (ALT, AST, Bilirubin, ALP) monitoring",
+            "Renal function monitoring"
+        ]
+    },
+    "easl_result" : {
+        "diagnosis" : "<paragraph explain the diagnosis from EASL result>",
+        "references" : [
+            {
+                "source" : "<mention source name>",
+                "supporting_text" : "<relevant text from the source>"
+            }
+        ]
+    }
+}

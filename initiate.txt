@@ -1,0 +1,2 @@
+uvicorn server:app --host 0.0.0.0 --port 443 --ssl-certfile "C:\certs\api.medforce-ai.com-chain.pem" `
+  --ssl-keyfile  "C:\certs\api.medforce-ai.com-key.pem"

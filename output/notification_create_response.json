@@ -1,0 +1,8 @@
+{
+    "success": true,
+    "message": "Notification sent successfully",
+    "notification": {
+        "message": "Notofication sent to GP and Rheumatologist",
+        "type": "info"
+    }
+}

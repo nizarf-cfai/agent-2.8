@@ -1,0 +1,103 @@
+{
+    "title": "General Checkup Task",
+    "todos": [
+        {
+            "text": "Review medical history",
+            "subTodos": [
+                {
+                    "status": "pending",
+                    "text": "Check medications"
+                },
+                {
+                    "status": "pending",
+                    "text": "Review allergies"
+                },
+                {
+                    "status": "pending",
+                    "text": "Assess current conditions"
+                }
+            ],
+            "status": "pending",
+            "agent": "MedForce Agent",
+            "id": "checkup-1"
+        },
+        {
+            "agent": "MedForce Agent",
+            "status": "pending",
+            "id": "checkup-2",
+            "text": "Perform physical exam",
+            "subTodos": [
+                {
+                    "status": "pending",
+                    "text": "Measure vitals"
+                },
+                {
+                    "status": "pending",
+                    "text": "Check heart and lungs"
+                },
+                {
+                    "text": "Examine abdomen",
+                    "status": "pending"
+                }
+            ]
+        },
+        {
+            "text": "Order lab tests",
+            "status": "pending",
+            "id": "checkup-3",
+            "agent": "MedForce Agent",
+            "subTodos": [
+                {
+                    "text": "Complete blood count",
+                    "status": "pending"
+                },
+                {
+                    "status": "pending",
+                    "text": "Comprehensive metabolic panel"
+                },
+                {
+                    "text": "Liver function tests",
+                    "status": "pending"
+                }
+            ]
+        },
+        {
+            "id": "checkup-4",
+            "text": "Assess vaccination status",
+            "agent": "MedForce Agent",
+            "status": "pending",
+            "subTodos": [
+                {
+                    "text": "Check immunization records",
+                    "status": "pending"
+                },
+                {
+                    "status": "pending",
+                    "text": "Administer necessary vaccines"
+                }
+            ]
+        },
+        {
+            "text": "Provide counseling and education",
+            "agent": "MedForce Agent",
+            "id": "checkup-5",
+            "subTodos": [
+                {
+                    "status": "pending",
+                    "text": "Discuss lifestyle modifications"
+                },
+                {
+                    "text": "Address health concerns",
+                    "status": "pending"
+                },
+                {
+                    "text": "Schedule follow-up appointment",
+                    "status": "pending"
+                }
+            ],
+            "status": "pending"
+        }
+    ],
+    "description": "Create a todo list for Sarah Miller's general checkup.",
+    "area": "planning-zone"
+}

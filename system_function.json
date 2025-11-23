@@ -1,0 +1,23 @@
+[
+    {
+        "name": "get_query",
+        "description": "Extract user query.",
+        "parameters": {
+            "type": "OBJECT",
+            "properties": {
+                "query": {
+                    "type": "STRING",
+                    "description": "User query."
+                }
+            },
+            "required": ["query"]
+        },
+        "response": {
+            "type": "ARRAY",
+            "items": {
+                "type": "STRING"
+            },
+            "description": "The detailed query steps or extracted interpretation."
+        }
+    }
+]

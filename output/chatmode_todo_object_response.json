@@ -1,0 +1,71 @@
+{
+    "id": "enhanced-todo-1763892979907-841ul6v7d",
+    "type": "todo",
+    "x": 5860,
+    "y": -2240,
+    "width": 450,
+    "height": "auto",
+    "color": "#ffffff",
+    "description": "Retrieve radiology reports for Sarah Miller, including CT and MRI scans, with specific filters applied.",
+    "todoData": {
+        "title": "Radiology Report Retrieval for Sarah Miller",
+        "description": "Retrieve radiology reports for Sarah Miller, including CT and MRI scans, with specific filters applied.",
+        "todos": [
+            {
+                "id": "task-1001",
+                "text": "Prepare radiology retrieval parameters for Sarah Miller",
+                "status": "pending",
+                "agent": "Data Analyst Agent",
+                "subTodos": [
+                    {
+                        "text": "Identify patient Sarah Miller",
+                        "status": "pending"
+                    },
+                    {
+                        "text": "Set category=LP29684-5 for radiology",
+                        "status": "pending"
+                    },
+                    {
+                        "text": "Apply modality filters for CT and MRI",
+                        "status": "pending"
+                    },
+                    {
+                        "text": "Apply status=final filter",
+                        "status": "pending"
+                    },
+                    {
+                        "text": "Set date filter to retrieve recent reports",
+                        "status": "pending"
+                    },
+                    {
+                        "text": "Set sorting to newest first and limit count",
+                        "status": "pending"
+                    }
+                ]
+            },
+            {
+                "id": "task-1002",
+                "text": "curl -X GET 'https://api.bedfordshirehospitals.nhs.uk/fhir-prd/r4/DiagnosticReport?patient=<UUID>&category=http://loinc.org|LP29684-5&date=ge2023-01-01&modality=http://dicom.nema.org/resources/ontology/DCM|CT&modality=http://dicom.nema.org/resources/ontology/DCM|MRI&status=final&_sort=-date&_count=10'",
+                "status": "pending",
+                "agent": "Consolidator Agent",
+                "subTodos": [
+                    {
+                        "text": "Execute retrieval request",
+                        "status": "pending"
+                    },
+                    {
+                        "text": "Verify HTTP response",
+                        "status": "pending"
+                    },
+                    {
+                        "text": "Parse and structure retrieved DiagnosticReport data",
+                        "status": "pending"
+                    }
+                ]
+            }
+        ]
+    },
+    "rotation": 0,
+    "createdAt": "2025-11-23T10:16:20.212Z",
+    "updatedAt": "2025-11-23T10:16:20.212Z"
+}

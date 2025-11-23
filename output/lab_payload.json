@@ -1,0 +1,13 @@
+{
+    "value": "0.1",
+    "range": {
+        "warningMax": 0.5,
+        "max": 0.5,
+        "warningMin": 0,
+        "min": 0
+    },
+    "status": "optimal",
+    "unit": "umol/L",
+    "trend": "stable",
+    "parameter": "Methotrexate Level"
+}

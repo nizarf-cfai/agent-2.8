@@ -1,0 +1,109 @@
+{
+  "patientInformation": {
+    "name": "Sarah Miller",
+    "mrn": "MC-001001",
+    "dateOfBirth": "1962-03-15",
+    "age": 63,
+    "sex": "Female"
+  },
+  "presentingComplaint": "Severe fatigue, jaundice, epigastric pain, confusion",
+  "medicalHistory": {
+    "conditions": [
+      "Rheumatoid arthritis",
+      "Essential hypertension",
+      "Mild chronic kidney disease"
+    ],
+    "allergies": [
+      "Penicillin (rash)"
+    ],
+    "socialHistory": "Drinks ~1\n–2 beers/day (7\n–14 units/week); denies bingeing. Smoked ~1 pack/day (35 pack-year history); quit in 2017."
+  },
+  "medications": {
+    "chronicPriorToEvent": [
+      "Methotrexate 20 mg weekly",
+      "Folic Acid 5 mg weekly",
+      "Lisinopril 10 mg daily"
+    ],
+    "initiatedAtAcuteEvent": "Trimethoprim-Sulfamethoxazole 800/160 mg BID"
+  },
+  "keyLaboratoryFindings": {
+    "encounterDate": "2025-06-21",
+    "results": [
+      {
+        "test": "ALT",
+        "value": "1650 U/L",
+        "flag": "H",
+        "reference": "7.0 - 56",
+        "note": "↑↑↑"
+      },
+      {
+        "test": "AST",
+        "value": "2100 U/L",
+        "flag": "H",
+        "reference": "8.0 - 40",
+        "note": "↑↑↑↑"
+      },
+      {
+        "test": "ALP",
+        "value": "350 U/L",
+        "flag": "H",
+        "reference": "40 - 150",
+        "note": "↑↑"
+      },
+      {
+        "test": "Total Bilirubin",
+        "value": "12.5 mg/dL",
+        "flag": "H",
+        "reference": "0.2 - 1.2",
+        "note": "↑↑↑↑"
+      },
+      {
+        "test": "INR",
+        "value": "1",
+        "flag": "",
+        "reference": "0.8 - 1.2",
+        "note": "Normal"
+      }
+    ]
+  },
+  "diagnosis": {
+    "main": "Drug-Induced Liver Injury (DILI) and Methotrexate Toxicity",
+    "causality": "Acute liver injury likely due to TMP-SMX and Methotrexate toxicity. Patient developed jaundice, confusion, and hepatic tenderness shortly after initiating TMP-SMX while on chronic Methotrexate therapy.",
+    "mechanism": "TMP-SMX can raise free methotrexate levels and impair folate metabolism, potentiating hepatocellular necrosis. Synergistic hepatotoxicity between TMP-SMX and Methotrexate is suspected."
+  },
+  "differentialDiagnosisTracker": {
+    "diagnoses": [
+      {
+        "name": "Drug-Induced Liver Injury (DILI)",
+        "status": "PRIMARY",
+        "notes": "Highly probable given timing of TMP-SMX initiation and clinical presentation."
+      },
+      {
+        "name": "Methotrexate Toxicity",
+        "status": "PRIMARY",
+        "notes": "Concomitant drug, known hepatotoxic, interacts with TMP-SMX."
+      },
+      {
+        "name": "Acute viral hepatitis",
+        "status": "INVESTIGATE",
+        "notes": "Pending serology."
+      },
+      {
+        "name": "Severe methotrexate toxicity",
+        "status": "INVESTIGATE",
+        "notes": "Pancytopenia and renal injury present; hepatic injury prominent."
+      },
+      {
+        "name": "Acute decompensation of undiagnosed chronic liver disease",
+        "status": "PENDING",
+        "notes": "No prior history, but considered."
+      },
+      {
+        "name": "Sepsis with multiorgan dysfunction",
+        "status": "PENDING",
+        "notes": "No fever or hemodynamic instability reported, but considered in context of ALF."
+      }
+    ],
+    "ruledOut": []
+  }
+}
