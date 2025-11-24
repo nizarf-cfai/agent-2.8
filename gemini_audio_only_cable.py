@@ -22,7 +22,7 @@ from google.genai import types
 import helper_model
 import faiss_rag
 
-from chroma_db.chroma_script import rag_from_json, get_easl_answer_async
+from chroma_db.chroma_script import rag_from_json
 from dotenv import load_dotenv
 load_dotenv()
 
