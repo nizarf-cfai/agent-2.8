@@ -117,7 +117,7 @@ class AudioOnlyGeminiCable:
                     "status" : "finished"
                 }
             )
-            await asyncio.sleep(random.uniform(0.5, 1.5))
+            await asyncio.sleep(random.uniform(0.2, 0.5))
 
         await canvas_ops.update_todo(
             {
@@ -127,7 +127,7 @@ class AudioOnlyGeminiCable:
                 "status" : "finished"
             }
         )
-        await asyncio.sleep(random.uniform(0.5, 1.5))
+        await asyncio.sleep(random.uniform(0.2, 0.5))
 
         await canvas_ops.update_todo(
             {
@@ -137,7 +137,7 @@ class AudioOnlyGeminiCable:
                 "status" : "executing"
             }
         )
-        await asyncio.sleep(random.uniform(0.5, 1.5))
+        await asyncio.sleep(random.uniform(0.2, 0.5))
         easl_status = await canvas_ops.initiate_easl_iframe(easl_q)
         for i in range(2):
             await canvas_ops.update_todo(
@@ -148,7 +148,7 @@ class AudioOnlyGeminiCable:
                     "status" : "finished"
                 }
             )
-            await asyncio.sleep(random.uniform(0.5, 1.5))
+            await asyncio.sleep(random.uniform(0.2, 0.5))
         await canvas_ops.update_todo(
             {
                 "id" : todo_obj.get('id'),
@@ -274,20 +274,20 @@ class AudioOnlyGeminiCable:
             )
 
 
-            await asyncio.sleep(random.uniform(0.5, 1.5))
+            await asyncio.sleep(random.uniform(0.2, 0.5))
 
             for i, st in enumerate(t.get('subTodos', [])):
                 await canvas_ops.update_todo(
                     {"id": todo_id, "task_id": t_id, "index": f"{i}", "status": "finished"}
                 )
-                await asyncio.sleep(random.uniform(0.5, 1.5))
+                await asyncio.sleep(random.uniform(0.2, 0.5))
 
             await canvas_ops.update_todo(
                 {"id": todo_id, "task_id": t_id, "index": "", "status": "finished"}
             )
 
 
-            await asyncio.sleep(random.uniform(0.5, 1.5))
+            await asyncio.sleep(random.uniform(0.2, 0.5))
 
 
 
