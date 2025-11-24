@@ -24,10 +24,13 @@ async def initiate_easl_iframe(question):
     headers = {
         "Content-Type": "application/json"
     }
-
+    with open(f"{config.output_dir}/initiate_iframe_payload.json", "w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False, indent=4)
     response = requests.post(url, json=payload, headers=headers)
-
-    return response.json()
+    data = response.json()
+    with open(f"{config.output_dir}/focus_response.json", "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=4)
+    return data
 
 async def get_agent_question(question):
     context_str = await helper_model.generate_question(question)
