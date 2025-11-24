@@ -20,6 +20,13 @@ CACHE_FILE = "embedding_cache.pkl"
 
 BASE_URL = os.getenv("CANVAS_URL", "https://board-v24problem.vercel.app")
 
+with open("object_desc.json", "r", encoding="utf-8") as f:
+    object_desc = json.load(f)
+object_desc_data = {}
+existing_desc_ids = []
+for o in object_desc:
+    object_desc_data[o['id']] = o['description']
+    existing_desc_ids.append(o['id'])
 
 def get_board_items():
     url = BASE_URL + "/api/board-items"
@@ -39,6 +46,9 @@ def get_board_items():
 
 
         elif "content"in d.keys() or 'conversationHistory' in d.keys():
+            if d.get('id') in existing_desc_ids:
+
+                d['description'] = object_desc_data.get(d.get('id'), '')
             content_object.append(d)
 
         
@@ -49,9 +59,6 @@ def get_board_items():
         json.dump(content_object, f, indent=4)   # indent=4 makes it pretty
     return content_object
 
-# -----------------------
-# Cache helpers
-# -----------------------
 def load_cache():
     return pickle.load(open(CACHE_FILE, "rb")) if os.path.exists(CACHE_FILE) else {}
 

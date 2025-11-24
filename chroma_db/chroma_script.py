@@ -23,7 +23,13 @@ import hashlib  # ✅ Added for caching
 # ---------------------------------------------------------
 # 📦 IMPORTS FOR RAG (FAISS + Gemini Embeddings)
 # ---------------------------------------------------------
-
+with open("object_desc.json", "r", encoding="utf-8") as f:
+    object_desc = json.load(f)
+object_desc_data = {}
+existing_desc_ids = []
+for o in object_desc:
+    object_desc_data[o['id']] = o['description']
+    existing_desc_ids.append(o['id'])
 # 1. FAISS for Vector Search
 try:
     import faiss
@@ -80,11 +86,6 @@ def get_board_items():
                 print(f"❌ Failed to load local cache: {e}")
             
     return []
-
-
-# ----------------------------
-# 🚀 GEMINI EMBEDDING HELPER
-# ----------------------------
 
 def embed_texts(texts: List[str]) -> List[List[float]]:
     """Embed texts using Gemini API (No local model loading)"""
@@ -271,8 +272,9 @@ async def rag_from_json(query: str="", top_k: int = 10):
                 summary_objects.append(d)
             elif 'dashboard-item' in d_id:
                 if d.get('type') == 'component':
+                    if d.get('id') in existing_desc_ids:
+                        d['description'] = object_desc_data.get(d.get('id'), '')
                     summary_objects.append(d)
-
             else:
                 pass
 
