@@ -55,7 +55,7 @@ def get_board_items():
         else:
             else_object.append(d)
 
-    with open(f"{config.output_dir}/board_items.json", "w", encoding="utf-8") as f:
+    with open(f"{config.output_dir}/faiss_board_items.json", "w", encoding="utf-8") as f:
         json.dump(content_object, f, indent=4)   # indent=4 makes it pretty
     return content_object
 

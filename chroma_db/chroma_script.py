@@ -266,14 +266,14 @@ async def rag_from_json(query: str="", top_k: int = 10):
             if not d: continue
             d_id = d.get('id', '')
             if 'raw' in d_id or 'single-encounter' in d_id or 'iframe' in d_id:
+                if d.get('id') in existing_desc_ids:
+                    d['description'] = object_desc_data.get(d.get('id'), '')
                 raw_objects.append(d)
             elif d.get('id') == "dashboard-item-chronomed-2":
                 d['description'] = "This timeline functions similarly to a medication timeline, but with an expanded DILI assessment focus. It presents a chronological view of the patient’s clinical course, aligning multiple time-bound elements to support hepatotoxicity monitoring. Like the medication timeline tracks periods of drug exposure, this object also visualises medication start/stop dates, dose changes, and hepatotoxic risk levels. In addition, it integrates encounter history, longitudinal liver function test trends, and critical clinical events. Temporal relationships are highlighted to show how changes in medication correlate with laboratory abnormalities and clinical deterioration, providing causality links relevant to DILI analysis. The timeline is designed to facilitate retrospective assessment and ongoing monitoring by showing when key events occurred in relation to medication use and liver injury progression."
                 summary_objects.append(d)
             elif 'dashboard-item' in d_id:
                 if d.get('type') == 'component':
-                    if d.get('id') in existing_desc_ids:
-                        d['description'] = object_desc_data.get(d.get('id'), '')
                     summary_objects.append(d)
             else:
                 pass
