@@ -13,5 +13,3 @@ Tone:
 - No emojis.
 - No speculation.
 
-Output:
-- Paragraphs of answer. Max 2 paragraphs.

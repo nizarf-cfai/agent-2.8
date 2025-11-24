@@ -32,7 +32,7 @@ async def get_answer(query :str, conversation_text: str='', context: str=''):
     if not context:
         context = await rag_from_json(query, top_k=3)
     prompt = f"""
-    Answer below user query using available data.
+    Answer below user query using available data. Give output max 2 paragraph.
     User query : {query}
 
     Chat History : 
@@ -63,7 +63,7 @@ async def chat_agent(chat_history: list[dict]) -> str:
     ]
     """
 
-    # Convert chat history into model-friendly input
+    # Convert chat history into model-friendly input 
     conversation = []
     if len(chat_history) > 1:
         for msg in chat_history[:-1]:
@@ -105,6 +105,7 @@ async def chat_agent(chat_history: list[dict]) -> str:
             loop.create_task(side_agent.generate_task_workflow(query))
 
         return "Task generated. Agent will execute in background."
+    
     elif tool_res.get('tool') == "create_schedule":
         print("SCHEDULE TOOL")
         res = await get_schedule()
