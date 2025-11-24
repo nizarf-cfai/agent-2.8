@@ -84,10 +84,6 @@ async def chat_agent(chat_history: list[dict]) -> str:
         await side_agent.trigger_easl(query)
         return "Question forwarded to EASL Interface. You will recieved the answer soon."
     
-    
-    if tool_res.get('tool') == "navigate_canvas":
-        object_id = await side_agent.resolve_object_id(query, context)
-        print("OBJECT ID :",object_id)
         
     elif tool_res.get('tool') == "get_easl_answer":
         await side_agent.trigger_easl(query)
