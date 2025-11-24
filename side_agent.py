@@ -472,7 +472,7 @@ async def _handle_agent_processing(action_data, todo_obj):
                         "status" : "finished"
                     }
                 )
-                await asyncio.sleep(random.uniform(0.5, 1.5))
+                await asyncio.sleep(random.uniform(0.3, 0.5))
             await canvas_ops.update_todo(
                     {
                         "id" : todo_id,
@@ -481,7 +481,7 @@ async def _handle_agent_processing(action_data, todo_obj):
                         "status" : "finished"
                     }
                 )
-            await asyncio.sleep(random.uniform(0.5, 1.5))
+            await asyncio.sleep(random.uniform(0.3, 0.5))
 
         agent_res['zone'] = "raw-ehr-data-zone"
         create_agent_res = await canvas_ops.create_result(agent_res)
