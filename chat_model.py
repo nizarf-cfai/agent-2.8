@@ -128,7 +128,7 @@ async def chat_agent(chat_history: list[dict]) -> str:
     """
 
     model = genai.GenerativeModel(
-        MODEL,
+        "gemini-2.5-flash",
         system_instruction=SYSTEM_PROMPT
     )
 
@@ -154,12 +154,12 @@ async def get_notification():
     return "Notification sent"
 
 
-history = [
-        {"role": "user", "content": "Tell me about Sarah Miller summary."},
-        # {"role": "user", "content": "Show me medication timeline"},
-        # {"role": "user", "content": "Create task to pull Sarah Miller Radiology data."},
-        # {"role": "user", "content": "What is the DILI diagnosis according EASL guideline for Sarah Miller?"},
-    ]
+# history = [
+#         {"role": "user", "content": "Tell me about Sarah Miller summary."},
+#         {"role": "user", "content": "Show me medication timeline"},
+#         {"role": "user", "content": "Create task to pull Sarah Miller Radiology data."},
+#         {"role": "user", "content": "What is the DILI diagnosis according EASL guideline for Sarah Miller?"},
+#     ]
 # start_time = time.time()
 
 # result = asyncio.run(chat_agent(history))
