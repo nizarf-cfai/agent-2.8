@@ -34,8 +34,9 @@ send_notification
 general  (DEFAULT)
 - Used when the user is:
   * Asking for information, explanation, summary, reasoning, interpretation
-  * Asking about patient status (e.g., labs, medications, diagnosis context)
+  * Asking about patient status (e.g., labs, medications, diagnosis context, next clinical visit)
   * NOT giving a command to pull/execute something
+  * Asking what, where, when, who, how.
 
 ---------------------------------------------------
 SPECIAL STABILITY RULE (IMPORTANT)

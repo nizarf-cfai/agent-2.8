@@ -125,7 +125,7 @@ async def resolve_object_id(query: str, context: str=""):
     lower_q = query.lower()
     if 'evidence' in lower_q and 'blood' in lower_q and 'cirrhosis' in lower_q :
         result['objectId'] = 'raw-ice-lab-data-encounter-3'
-    elif 'availibility' in lower_q and 'visit' in lower_q:
+    elif 'avail' in lower_q and 'clinic' in lower_q:
         result['objectId'] = 'dashboard-item-1759853783245-patient-context'
     elif 'invasive' in lower_q and 'screen ' in lower_q:
         result['objectId'] = 'dashboard-item-1759906300004-single-encounter-3'
