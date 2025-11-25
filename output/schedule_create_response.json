@@ -1,7 +1,7 @@
 {
-    "id": "dashboard-item-1763703299535-scheduling-panel",
+    "id": "dashboard-item-1764044999354-scheduling-panel",
     "type": "component",
-    "x": 6800,
+    "x": 5860,
     "y": -2240,
     "width": 600,
     "height": "auto",
@@ -51,6 +51,6 @@
             }
         }
     },
-    "createdAt": "2025-11-21T05:34:59.840Z",
-    "updatedAt": "2025-11-21T05:34:59.840Z"
+    "createdAt": "2025-11-25T04:29:59.817Z",
+    "updatedAt": "2025-11-25T04:29:59.817Z"
 }

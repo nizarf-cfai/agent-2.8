@@ -83,7 +83,17 @@ Context contains:
 → Output:
 {"objectId": "dashboard-item-1759906300003-single-encounter-1"}
 
+User Query: "From her other blood results, is there any evidence of liver cirrhosis?"
+Context contains:
+- "raw-ice-lab-data-encounter-3"
+→ Output:
+{"objectId": "raw-ice-lab-data-encounter-3"}
 
+User Query: "Have there been significant changes in her health? E.g. weight, blood pressure."
+Context contains:
+- "dashboard-item-1759906300004-single-encounter-6"
+→ Output:
+{"objectId": "dashboard-item-1759906300004-single-encounter-6"}
 ```
 
 ---
