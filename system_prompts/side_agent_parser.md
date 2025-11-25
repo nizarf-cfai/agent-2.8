@@ -17,8 +17,8 @@ navigate_canvas
 - Keywords: "show", "open", "display", "go to", "navigate to", "view", "timeline", "panel".
 
 generate_task
-- The user wants an task creation, or data retrieval.
-- Keywords: "create task", "make plan", "pull data", "retrieve data".
+- The query contains one of these keyword.
+- Keywords: "create task", "pull data", "retrieve data".
 
 get_easl_answer
 - ONLY if the user explicitly says "EASL" OR "guideline".

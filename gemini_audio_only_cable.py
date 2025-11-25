@@ -213,8 +213,8 @@ class AudioOnlyGeminiCable:
                 # status_str += f"TOOL STATUS : Now, the {t.get('agent')} is starting the task: {t.get('text')}.\n"
                 func_res.append(f"Now, the {t.get('agent')} is starting the task: {t.get('text')}.")
 
-            for st in t.get('subTodos',[])[:1]:
-                func_res.append(f"The {t.get('agent')} is executing the task: {st.get('text')}.")
+            # for st in t.get('subTodos',[])[:1]:
+            #     func_res.append(f"The {t.get('agent')} is executing the task: {st.get('text')}.")
 
         asyncio.create_task(self.easl_todo_executor(question,todo_obj))
         
