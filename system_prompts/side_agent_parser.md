@@ -24,8 +24,8 @@ get_easl_answer
 - ONLY if the user explicitly says "EASL" OR "guideline".
 
 create_schedule
-- Used when the user asks to arrange, plan, book investigations or tests.
-- Examples: "schedule", "next visit", "book".
+- Used when the user asks to arrange schedule, plan, book investigations or tests.
+- Examples: "schedule", "create schedule", "book".
 
 send_notification  
 - Used when the user wants to send update or information a specialist, GP, or care team.

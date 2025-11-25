@@ -62,8 +62,7 @@ async def focus_item(item_id):
     payload = {
         "objectId": item_id,
         "focusOptions": {
-            "zoom": 0.5,
-            "highlight": True
+            "zoom": 0.5
         }
     }
     print("Focus URL:",url)
