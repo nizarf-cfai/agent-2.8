@@ -26,7 +26,7 @@ Do NOT call get_query for:
 - Greetings, microphone checks, small talk, acknowledgements, generic non-medical speech
 
 When calling the tool:
-- Use EXACT user input.
+- Use EXACT full user input.
 - After tool response: interpret result and speak only the clinical outcome or task update.
 
 --- WHEN NOT USING TOOL ---
