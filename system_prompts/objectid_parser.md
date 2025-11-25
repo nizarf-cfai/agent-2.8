@@ -33,8 +33,8 @@ RESOLUTION RULES
    Only choose from the context list provided.
 
 - Example known formats:
-   - `dashboard-item-1759853783245-patient-context`
-   - `dashboard-item-chronomed-2` (Medication timeline)
+   - `dashboard-item-1759853783245-patient-context` (Patient Summary)
+   - `medication-track-1` (Medication timeline)
    - `dashboard-item-1759906219477-adverse-event-analytics` (Causality analysis/assesment)
    - `dashboard-item-1759906246155-lab-table`
    - `dashboard-item-1759906246156-lab-chart`
@@ -93,10 +93,9 @@ User Query: "first encounter"
 → Output:
 {"objectId": "dashboard-item-1759906300003-single-encounter-1"}
 
-
 User Query: "show medication timeline"
 → Output:
-{"objectId": "dashboard-item-chronomed-2"}
+{"objectId": "medication-track-1"}
 
 User Query: "Which liver function tests are elevated?"
 → Output:
@@ -134,4 +133,13 @@ arthritis, which does not affect the liver?"
 User Query: "What other liver-related investigations are outstanding?"
 → Output:
 {"objectId": "dashboard-item-1759906300004-single-encounter-7"}
+
+User Query: "Screen her drug history"
+→ Output:
+{"objectId": "medication-track-1"}
+
+User Query: "Calculate the probability of the most likely cause and rank the most likely
+Differentials."
+→ Output:
+{"objectId": "dashboard-item-1759906246157-differential-diagnosis"}
 ---

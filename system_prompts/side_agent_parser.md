@@ -17,7 +17,7 @@ navigate_canvas
 - Keywords: "show", "open", "display", "go to", "navigate to", "view", "timeline", "panel".
 
 generate_task
-- The query contains one of these keyword.
+- ONLY if the user explicitly says "task" OR "pull" OR "retrieve".
 - Keywords: "create task", "pull data", "retrieve data".
 
 get_easl_answer
@@ -79,5 +79,9 @@ User: "Arrange ultrasound follow-up in two weeks."
 Output:
 {"query": "schedule ultrasound follow-up in 2 weeks", "tool": "create_schedule"}
 
+
+User: "Please request outstanding investigations and schedule her into the clinic at the next available vacancy."
+Output:
+{"query": "Please request outstanding investigations and schedule her into the clinic at the next available vacancy.", "tool": "create_schedule"}
 ---------------------------------------------------
 END OF INSTRUCTIONS
