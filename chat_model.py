@@ -128,7 +128,8 @@ async def chat_agent(chat_history: list[dict]) -> str:
     """
 
     model = genai.GenerativeModel(
-        "gemini-2.5-flash",
+        MODEL,
+        # "gemini-2.5-flash",
         system_instruction=SYSTEM_PROMPT
     )
 
