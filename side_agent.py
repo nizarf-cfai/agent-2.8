@@ -131,6 +131,10 @@ async def resolve_object_id(query: str, context: str=""):
         result['objectId'] = 'dashboard-item-1759906300004-single-encounter-3'
     elif 'history' in lower_q and 'drug ' in lower_q:
         result['objectId'] = 'medication-track-1'
+    elif 'investigation' in lower_q and 'outstanding' in lower_q:
+        result['objectId'] = 'dashboard-item-1759906300004-single-encounter-7'
+    elif 'probability' in lower_q:
+        result['objectId'] = 'dashboard-item-1759906246157-differential-diagnosis'
         
     ### CANVAS ACTION HERE
     focus_res = await canvas_ops.focus_item(result.get("objectId"))
