@@ -117,7 +117,7 @@ async def chat_agent(chat_history: list[dict]) -> str:
 
 
     prompt = f"""
-    Answer below user query using available data.
+    Answer below user query using available data. Give detailed output.
     User query : {query}
 
     Chat History : 

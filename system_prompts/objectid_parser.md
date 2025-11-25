@@ -98,4 +98,40 @@ User Query: "show medication timeline"
 → Output:
 {"objectId": "dashboard-item-chronomed-2"}
 
+User Query: "Which liver function tests are elevated?"
+→ Output:
+{"objectId": "lab-track-1"}
+
+User Query: "When did these become abnormal?"
+→ Output:
+{"objectId": "lab-track-1"}
+
+User Query: "Have there been significant changes in her health?"
+→ Output:
+{"objectId": "dashboard-item-1759906300004-single-encounter-6"}
+
+User Query: "How has her diabetes control been?"
+→ Output:
+{"objectId": "lab-track-1"}
+
+User Query: "From her other blood results, is there any evidence of liver cirrhosis?"
+→ Output:
+{"objectId": "raw-ice-lab-data-encounter-3"}
+
+User Query: "Has a non-invasive liver screen been performed?"
+→ Output:
+{"objectId": "dashboard-item-1759906300004-single-encounter-3"}
+
+User Query: "What is the treatment recommendation for the likely diagnosis?"
+→ Output:
+{"objectId": "dashboard-item-1759906246157-differential-diagnosis"}
+
+User Query: "What other treatment options are available to Sarah Miller for her rheumatoid
+arthritis, which does not affect the liver?"
+→ Output:
+{"objectId": "key-events-track-1"}
+
+User Query: "What other liver-related investigations are outstanding?"
+→ Output:
+{"objectId": "dashboard-item-1759906300004-single-encounter-7"}
 ---
