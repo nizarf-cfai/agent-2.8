@@ -277,11 +277,16 @@ async def rag_from_json(query: str="", top_k: int = 10):
                     if d.get('id') in existing_desc_ids:
                         d['description'] = object_desc_data.get(d.get('id'), '')
                     summary_objects.append(d)
-            else:
-                pass
+            elif d.get('type') == 'component':
+                    if d.get('id') in existing_desc_ids:
+                        d['description'] = object_desc_data.get(d.get('id'), '')
+                    summary_objects.append(d)
 
         # print(f"Summary objects: {len(summary_objects)}, Raw objects: {len(raw_objects)}")
-
+        with open(f"{config.output_dir}/rag_dashboard_object.json", "w", encoding="utf-8") as f:
+            json.dump(summary_objects, f, ensure_ascii=False, indent=4)
+        with open(f"{config.output_dir}/rag_raw_object.json", "w", encoding="utf-8") as f:
+            json.dump(raw_objects, f, ensure_ascii=False, indent=4)
         # Convert to Markdown
         summary_objects_blocks = [json_to_markdown(obj, i) for i,obj in enumerate(summary_objects)]
         raw_objects_blocks = [json_to_markdown(obj, i) for i,obj in enumerate(raw_objects)]
