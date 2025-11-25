@@ -117,7 +117,7 @@ class AudioOnlyGeminiCable:
                     "status" : "finished"
                 }
             )
-            await asyncio.sleep(random.uniform(0.2, 0.5))
+            # await asyncio.sleep(random.uniform(0.2, 0.3))
 
         await canvas_ops.update_todo(
             {
@@ -127,7 +127,7 @@ class AudioOnlyGeminiCable:
                 "status" : "finished"
             }
         )
-        await asyncio.sleep(random.uniform(0.2, 0.5))
+        await asyncio.sleep(random.uniform(0.2, 0.3))
 
         await canvas_ops.update_todo(
             {
@@ -137,7 +137,7 @@ class AudioOnlyGeminiCable:
                 "status" : "executing"
             }
         )
-        await asyncio.sleep(random.uniform(0.2, 0.5))
+        await asyncio.sleep(random.uniform(0.2, 0.3))
         easl_status = await canvas_ops.initiate_easl_iframe(easl_q)
         for i in range(2):
             await canvas_ops.update_todo(
@@ -148,7 +148,7 @@ class AudioOnlyGeminiCable:
                     "status" : "finished"
                 }
             )
-            await asyncio.sleep(random.uniform(0.2, 0.5))
+            # await asyncio.sleep(random.uniform(0.2, 0.5))
         await canvas_ops.update_todo(
             {
                 "id" : todo_obj.get('id'),
@@ -208,17 +208,17 @@ class AudioOnlyGeminiCable:
         
         todo_obj = await canvas_ops.create_todo(easl_todo_payload)
         
-        for t in easl_todo_payload.get('todos', []):
-            if 'http:' not in t.get('text'):
+        for t in easl_todo_payload.get('todos', [])[:1]:
+            if 'http:' not in t.get('text')[:1]:
                 # status_str += f"TOOL STATUS : Now, the {t.get('agent')} is starting the task: {t.get('text')}.\n"
-                func_res.append(f"TOOL STATUS : Now, the {t.get('agent')} is starting the task: {t.get('text')}.")
+                func_res.append(f"Now, the {t.get('agent')} is starting the task: {t.get('text')}.")
 
             for st in t.get('subTodos',[])[:1]:
-                func_res.append(f"TOOL STATUS : The {t.get('agent')} is executing the task: {st.get('text')}.")
+                func_res.append(f"The {t.get('agent')} is executing the task: {st.get('text')}.")
 
         asyncio.create_task(self.easl_todo_executor(question,todo_obj))
         
-        func_res.append(f"TOOL STATUS :All tasks are complete. The rest task are forwarded to EASL Guideline Agent.")
+        func_res.append(f"Tasks are complete. The rest task are forwarded to EASL Guideline Agent.")
 
         func_step.append(
                 types.FunctionResponse(
@@ -274,20 +274,19 @@ class AudioOnlyGeminiCable:
             )
 
 
-            await asyncio.sleep(random.uniform(0.2, 0.5))
 
             for i, st in enumerate(t.get('subTodos', [])):
                 await canvas_ops.update_todo(
                     {"id": todo_id, "task_id": t_id, "index": f"{i}", "status": "finished"}
                 )
-                await asyncio.sleep(random.uniform(0.2, 0.5))
+                # await asyncio.sleep(random.uniform(0.2, 0.3))
 
             await canvas_ops.update_todo(
                 {"id": todo_id, "task_id": t_id, "index": "", "status": "finished"}
             )
 
 
-            await asyncio.sleep(random.uniform(0.2, 0.5))
+            await asyncio.sleep(random.uniform(0.2, 0.3))
 
 
 
@@ -336,15 +335,15 @@ class AudioOnlyGeminiCable:
             todo_obj = await side_agent.generate_todo(query=query)
             asyncio.create_task(self.create_todo_canvas(todo_obj))
 
-            for t in todo_obj.get("todoData", {}).get('todos', []):
-                if 'http:' not in t.get('text'):
-                    func_res.append(f"TOOL STATUS : Now, the {t.get('agent')} is starting the task: {t.get('text')}.")
+            for t in todo_obj.get("todoData", {}).get('todos', [])[:1]:
+                if 'http' not in t.get('text'):
+                    func_res.append(f"Now, the {t.get('agent')} is starting the task: {t.get('text')}.")
 
                 for st in t.get('subTodos',[])[:1]:
-                    func_res.append(f"TOOL STATUS : The {t.get('agent')} is executing the task: {st.get('text')}.")
+                    func_res.append(f"The {t.get('agent')} is executing the task: {st.get('text')}.")
 
 
-            func_res.append(f"All tasks are complete. I will now consolidate the results.")
+            func_res.append(f"Tasks are complete. I will now consolidate the results.")
 
             function_list.append(
                 types.FunctionResponse(

@@ -1,7 +1,7 @@
 {
     "success": true,
     "message": "Focus event broadcasted",
-    "itemId": "dashboard-item-1759853783245-patient-context",
+    "itemId": "iframe-item-easl-interface",
     "subElement": null,
     "focusOptions": {
         "zoom": 0.5,

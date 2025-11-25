@@ -1,5 +1,318 @@
 [
     {
+        "id": "dashboard-item-1759906300004-single-encounter-4",
+        "type": "component",
+        "x": -1300,
+        "y": 800,
+        "width": 500,
+        "height": 600,
+        "componentType": "SingleEncounterDocument",
+        "color": "#ffffff",
+        "description": "This is the fourth encounter, an Outpatient visit on June 3, 2024, with Dr. P. Stevens. This visit marked the official initiation of Methotrexate for Rheumatoid Arthritis management. The patient confirmed understanding of the treatment regimen and hepatotoxicity risks. Physical exam showed stable weight (BMI 31.2) and BP 138/86 mmHg. The management plan confirmed the start of Methotrexate 7.5mg orally once weekly and Folic Acid 5mg weekly. A monitoring schedule was established requiring LFTs and Full Blood Count (FBC) every six weeks, with the first evaluation scheduled for July 15, 2024.",
+        "content": {
+            "title": "Encounter #4 - Outpatient",
+            "component": "SingleEncounterDocument",
+            "props": {
+                "encounter": {
+                    "encounter_no": 4,
+                    "meta": {
+                        "visit_type": "Outpatient",
+                        "date_time": "2024-06-03T11:30:55",
+                        "provider": {
+                            "name": "Dr. P. Stevens",
+                            "specialty": "Unknown"
+                        },
+                        "ui_risk_color": "yellow"
+                    },
+                    "assessment": {
+                        "impression": "Initiation of Methotrexate for Rheumatoid Arthritis management.",
+                        "differential": []
+                    },
+                    "chief_complaint": "Initiation of Disease-Modifying Anti-Rheumatic Drug (DMARD) - Methotrexate (MTX) for Rheumatoid Arthritis (RA) management.",
+                    "hpi": "Sarah Miller presents for the initiation of Methotrexate treatment for RA. She reports her joint pain has been stable but remains a significant source of discomfort, affecting her daily activities. A thorough review of her medical history, medication adherence, and lifestyle was conducted. The patient confirms receipt and comprehension of the Methotrexate informational leaflet, indicating understanding of the treatment regimen and potential adverse effects. The decision to commence Methotrexate was made following normalization of liver function tests (LFTs) as of May 6, 2024. The patient reiterated understanding of the importance of strict compliance with the monitoring schedule due to the severe hepatotoxicity risk associated with Methotrexate.",
+                    "medications_prior": [],
+                    "physical_exam": {
+                        "general": "Vital Signs: BP 138/86 mmHg (sitting), HR 80 bpm, RR 15/min, Temp 36.7°C, SpO₂ 98% on room air. Anthropometrics: Weight 84 kg (BMI 31.2 kg/m²). Weight stable compared with early May.",
+                        "msk": "",
+                        "other_systems": ""
+                    },
+                    "plan": {
+                        "investigations": {
+                            "imaging": [],
+                            "labs": [
+                                "LFTs every six weeks",
+                                "Full Blood Count (FBC) every six weeks"
+                            ]
+                        },
+                        "management": {
+                            "follow_up": "First LFT/FBC evaluation scheduled for July 15, 2024. Regular monitoring every six weeks for the next 6 months. Patient to contact clinic immediately if severe nausea, vomiting, or jaundice occur.",
+                            "medications_started": [
+                                {
+                                    "dose": "7.5mg",
+                                    "frequency": "once weekly",
+                                    "name": "Methotrexate",
+                                    "route": "orally"
+                                },
+                                {
+                                    "dose": "5mg",
+                                    "frequency": "weekly",
+                                    "name": "Folic Acid",
+                                    "route": "orally"
+                                }
+                            ]
+                        }
+                    },
+                    "reason_for_visit": "Initiation of Methotrexate for Rheumatoid Arthritis management."
+                },
+                "patient": {
+                    "name": "Sarah Miller",
+                    "sex": "Female",
+                    "age_at_first_encounter": 43
+                },
+                "encounterIndex": 4,
+                "dataSource": "Medilogik"
+            }
+        },
+        "createdAt": "2025-10-15T08:00:00.000Z",
+        "updatedAt": "2025-10-15T08:00:00.000Z"
+    },
+    {
+        "id": "dashboard-item-1759906300004-single-encounter-5",
+        "type": "component",
+        "x": -600,
+        "y": 800,
+        "width": 500,
+        "height": 600,
+        "componentType": "SingleEncounterDocument",
+        "color": "#ffffff",
+        "description": "This is the fifth encounter, an Outpatient visit on July 15, 2024, with Dr. P. Stevens (Rheumatology). The patient presented for routine Methotrexate monitoring but reported new intermittent nausea and increased fatigue. The assessment identified Methotrexate-induced Drug-Induced Liver Injury (DILI) with a significantly elevated ALT of 185 U/L (4.6x ULN). While RA symptoms improved, diabetes control deteriorated (HbA1c 60 mmol/mol). Vitals showed BP 144/92 mmHg. The plan involved repeating LFTs in four weeks, advising vigilance for jaundice, and adjusting the medication regimen to Methotrexate 5mg weekly while recommending a Hepatology consultation. Next available clinical visit 15 December 2025.",
+        "content": {
+            "title": "Encounter #5 - Outpatient",
+            "component": "SingleEncounterDocument",
+            "props": {
+                "encounter": {
+                    "encounter_no": 5,
+                    "meta": {
+                        "visit_type": "Outpatient",
+                        "date_time": "2024-07-15T14:00:30",
+                        "provider": {
+                            "name": "Dr. P. Stevens",
+                            "specialty": "Rheumatology"
+                        },
+                        "ui_risk_color": "yellow"
+                    },
+                    "assessment": {
+                        "impression": "Methotrexate-induced Drug-Induced Liver Injury (DILI) presenting with elevated ALT (185 U/L, 4.6x ULN), with new intermittent nausea and increased fatigue. Rheumatoid arthritis symptoms are improving on Methotrexate. Diabetes control has deteriorated with HbA1c rising to 60 mmol/mol, signalling worsening glycaemia during MTX therapy and possible contribution to fatigue.",
+                        "differential": [
+                            "Methotrexate-induced Drug-Induced Liver Injury (DILI)",
+                            "Underlying MASLD risk factors"
+                        ]
+                    },
+                    "chief_complaint": "Routine Methotrexate (MTX) monitoring. Reports of new intermittent nausea and increased fatigue.",
+                    "hpi": "Sarah Miller, a 43-year-old female, presents for routine Methotrexate monitoring. She reports ~1 kg unintentional weight loss over the past month, attributed to reduced appetite and intermittent nausea, primarily in the evenings. No vomiting or diarrhea. Fatigue levels have returned to pre-MTX initiation severity. Rheumatoid arthritis symptoms have significantly improved with diminished joint pain and increased daily function since starting Methotrexate. Recent labs show ALT elevated to 185 U/L (4.6x ULN). HbA1c has worsened to 60 mmol/mol, indicating declining diabetes control despite weight loss.",
+                    "medications_prior": [],
+                    "physical_exam": {
+                        "general": "Vital Signs: BP 144/92 mmHg (sitting), HR 88 bpm, RR 16/min, Temp 36.8°C, SpO₂ 98% on room air.",
+                        "msk": "Joint pain has diminished.",
+                        "other_systems": "Weight 83 kg (BMI 30.8 kg/m²). Despite some weight reduction, diabetes control is worsening with higher HbA1c and increased metabolic fatigue."
+                    },
+                    "plan": {
+                        "investigations": {
+                            "imaging": [],
+                            "labs": [
+                                "Repeat liver function tests in four weeks",
+                                "HbA1c monitoring recommended due to recent deterioration"
+                            ]
+                        },
+                        "management": {
+                            "follow_up": "Follow up in four weeks. Advised to remain vigilant for any worsening of symptoms or new signs of liver dysfunction such as jaundice, further exacerbated fatigue, or darker urine. Ensure adherence to adjusted Methotrexate regimen. Attend Hepatology consultation.",
+                            "medications_started": [
+                                {
+                                    "dose": "5mg",
+                                    "frequency": "weekly",
+                                    "name": "Methotrexate",
+                                    "route": ""
+                                }
+                            ]
+                        }
+                    },
+                    "reason_for_visit": "Routine Methotrexate monitoring and management of new symptoms of nausea and fatigue, and elevated liver enzymes."
+                },
+                "patient": {
+                    "name": "Sarah Miller",
+                    "sex": "Female",
+                    "age_at_first_encounter": 43
+                },
+                "encounterIndex": 5,
+                "dataSource": "Nervecentre"
+            }
+        },
+        "createdAt": "2025-10-15T08:00:00.000Z",
+        "updatedAt": "2025-10-15T08:00:00.000Z"
+    },
+    {
+        "id": "dashboard-item-1759906300003-single-encounter-1",
+        "type": "component",
+        "x": -3300,
+        "y": 800,
+        "width": 400,
+        "height": 500,
+        "componentType": "SingleEncounterDocument",
+        "color": "#ffffff",
+        "description": "#first encounter #first encounter.\n This is the first encounter in the patient's timeline. It is an Outpatient Visit recorded on March 5, 2024, with Dr. P. Stevens (General Practice). The patient, Sarah Miller (43, Female), presented with a chief complaint of increased fatigue over the past 4-5 months. The assessment revealed suboptimal control of Type 2 Diabetes Mellitus (HbA1c 58 mmol/mol) and Hypertension, alongside Chronic Fatigue Syndrome possibly related to Metabolic Dysfunction-associated Steatotic Liver Disease (MASLD). Physical exam noted a BMI of 32.0 (Class I obesity), BP 146/92 mmHg, and mild effusion in the right wrist due to Rheumatoid Arthritis. The plan involved ordering complete LFTs and HbA1c, with a follow-up scheduled in 4 weeks to evaluate eligibility for Methotrexate (MTX) therapy.",
+        "content": {
+            "title": "Encounter #1 - Outpatient Visit",
+            "component": "SingleEncounterDocument",
+            "props": {
+                "encounter": {
+                    "encounter_no": 1,
+                    "meta": {
+                        "visit_type": "Outpatient",
+                        "date_time": "2024-03-05T10:15:22Z",
+                        "provider": {
+                            "name": "Dr. P. Stevens",
+                            "specialty": "General Practice"
+                        },
+                        "ui_risk_color": "yellow"
+                    },
+                    "assessment": {
+                        "impression": "Suboptimal control of T2DM/HTN, Chronic Fatigue Syndrome possibly related to MASLD. Diabetes control is poor with HbA1c at 58 mmol/mol, indicating long-standing hyperglycaemia and need for therapeutic adjustment.",
+                        "differential": [
+                            "T2DM suboptimal control",
+                            "Hypertension suboptimal control",
+                            "Chronic Fatigue Syndrome",
+                            "MASLD"
+                        ]
+                    },
+                    "chief_complaint": "Increased fatigue over the past 4-5 months",
+                    "hpi": "Sarah Miller, a 43-year-old administrative assistant, presents with debilitating fatigue affecting work performance. She averages 6.5 hours of non-restorative sleep per night and experiences RA-related discomfort, particularly in the right wrist. She takes Ibuprofen 4-5 times per week for pain and chemically-induced frequent bloating. HbA1c from today’s labs is 58 mmol/mol, confirming persistently weak glycaemic control which may be contributing to fatigue and metabolic strain.",
+                    "medications_prior": [
+                        {
+                            "name": "Metformin",
+                            "route": "Oral, unknown dose, BD frequency, for T2DM"
+                        },
+                        {
+                            "name": "Ramipril",
+                            "route": "Oral, 5mg, OD frequency, for Hypertension"
+                        },
+                        {
+                            "name": "Ibuprofen",
+                            "route": "Oral, unknown dose, taken 4-5 times per week for RA pain"
+                        },
+                        {
+                            "name": "Simethicone",
+                            "route": "Oral, unknown dose, unknown frequency, for bloating"
+                        }
+                    ],
+                    "physical_exam": {
+                        "general": "Appears non-toxic and well-perfused.",
+                        "msk": "Mild effusion in right MCP joint 3, mild pain on movement.",
+                        "other_systems": "Vital Signs: BP 146/92 mmHg (sitting), HR 82 bpm, RR 16/min, Temp 36.8°C, SpO₂ 99% on room air. Anthropometrics: Height 1.64 m, Weight 86 kg (BMI 32.0 kg/m²; class I obesity). Weight reported as broadly stable over the past 12 months. Skin/Sclera: Anicteric sclerae; no chronic liver disease stigmata. Abdomen: Soft, lax, normal liver span, no tenderness. Diabetes: Persistent hyperglycaemia suspected based on elevated HbA1c and obesity."
+                    },
+                    "plan": {
+                        "investigations": {
+                            "labs": [
+                                "Complete LFTs",
+                                "HbA1c",
+                                "Consider future intensification of diabetes therapy if HbA1c remains > 53 mmol/mol"
+                            ]
+                        },
+                        "management": {
+                            "follow_up": "Follow-up in 4 weeks to evaluate LFTs and MTX eligibility.",
+                            "medications_started": []
+                        }
+                    },
+                    "reason_for_visit": "Increased fatigue"
+                },
+                "patient": {
+                    "name": "Sarah Miller",
+                    "sex": "Female",
+                    "age_at_first_encounter": 43
+                },
+                "encounterIndex": 1,
+                "dataSource": "Electronic Health Record"
+            }
+        },
+        "createdAt": "2025-10-14T16:55:00.003Z",
+        "updatedAt": "2025-10-14T16:55:00.003Z"
+    },
+    {
+        "id": "dashboard-item-1759906300004-single-encounter-2",
+        "type": "component",
+        "x": -2700,
+        "y": 800,
+        "width": 500,
+        "height": 600,
+        "componentType": "SingleEncounterDocument",
+        "color": "#ffffff",
+        "description": "This is the second encounter, an Outpatient visit occurring on April 1, 2024, with Dr. P. Stevens. The visit focused on reviewing abnormal liver function tests and planning Rheumatoid Arthritis treatment. The assessment highlighted an elevated ALT of 78 U/L, raising concerns for hepatocellular inflammation potentially related to MASLD. Consequently, Methotrexate initiation was deferred. The patient reported slight weight loss (0.5–1 kg) and was educated on the risks of liver injury. Vitals showed BP 142/90 mmHg and BMI 31.8. The plan included a comprehensive liver panel (HBsAg, HCV, ANA, Ferritin, etc.) and instructions to return in 4 weeks to review results.",
+        "content": {
+            "title": "Encounter #2 - Outpatient",
+            "component": "SingleEncounterDocument",
+            "props": {
+                "encounter": {
+                    "encounter_no": 2,
+                    "meta": {
+                        "visit_type": "Outpatient",
+                        "date_time": "2024-04-01T15:00:45",
+                        "provider": {
+                            "name": "Dr. P. Stevens",
+                            "specialty": "Unknown"
+                        },
+                        "ui_risk_color": "yellow"
+                    },
+                    "assessment": {
+                        "impression": "Elevated ALT of 78 U/L, concerning for hepatocellular inflammation, potentially related to Metabolic Dysfunction-associated Steatotic Liver Disease (MASLD). Methotrexate initiation deferred pending further investigation.",
+                        "differential": [
+                            "Hepatocellular inflammation",
+                            "Metabolic Dysfunction-associated Steatotic Liver Disease (MASLD)",
+                            "Viral Hepatitis",
+                            "Autoimmune Hepatitis",
+                            "Hemochromatosis",
+                            "Alpha-1-Antitrypsin Deficiency"
+                        ]
+                    },
+                    "chief_complaint": "Review of abnormal liver function tests and planning for rheumatoid arthritis treatment.",
+                    "hpi": "Patient reports making small changes to diet and activity since the last visit, with an approximate 0.5–1 kg weight loss. The elevated ALT of 78 U/L was reviewed. Potential Metabolic Dysfunction-associated Steatotic Liver Disease (MASLD) was discussed as a contributing factor. Patient was educated on the significance of these results and the potential risk for liver injury if starting Methotrexate without further clearance.",
+                    "medications_prior": [],
+                    "physical_exam": {
+                        "general": "Vital Signs: BP 142/90 mmHg (sitting), HR 80 bpm, RR 16/min, Temp 36.7°C, SpO₂ 99% on room air. Anthropometrics: Weight 85.5 kg (BMI 31.8 kg/m²).",
+                        "msk": "",
+                        "other_systems": ""
+                    },
+                    "plan": {
+                        "investigations": {
+                            "imaging": [],
+                            "labs": [
+                                "HBsAg",
+                                "HCV Ab",
+                                "ANA",
+                                "ASMA",
+                                "Ferritin",
+                                "TIBC",
+                                "Full liver panel"
+                            ]
+                        },
+                        "management": {
+                            "follow_up": "Return for follow-up in 4 weeks to review investigation results. Continued monitoring and lifestyle modifications advised.",
+                            "medications_started": []
+                        }
+                    },
+                    "reason_for_visit": "Review of abnormal liver function tests and planning for rheumatoid arthritis treatment."
+                },
+                "patient": {
+                    "name": "Sarah Miller",
+                    "sex": "Female",
+                    "age_at_first_encounter": 43
+                },
+                "encounterIndex": 2,
+                "dataSource": "BigHand"
+            }
+        },
+        "createdAt": "2025-10-15T08:00:00.000Z",
+        "updatedAt": "2025-10-15T08:00:00.000Z"
+    },
+    {
         "id": "dashboard-item-1759906300004-single-encounter-6",
         "type": "component",
         "x": 100,
@@ -77,134 +390,84 @@
         "updatedAt": "2025-10-14T16:55:00.004Z"
     },
     {
-        "id": "dashboard-item-1759853783245-patient-context",
+        "id": "dashboard-item-1759906300004-single-encounter-3",
         "type": "component",
-        "x": -4029,
-        "y": 3700,
-        "width": 1600,
-        "height": "auto",
-        "componentType": "PatientContext",
+        "x": -2000,
+        "y": 800,
+        "width": 500,
+        "height": 600,
+        "componentType": "SingleEncounterDocument",
         "color": "#ffffff",
-        "description": "'Sarah Miller (MRN: SM43850603) is a 43-year-old female patient (DOB: 1981-06-03) currently classified as high risk. Her primary diagnosis is Severe Drug-Induced Liver Injury (DILI) related to Methotrexate use.\nClinical History and Comorbidities:\nSarah has a complex medical history including Type 2 Diabetes Mellitus, Essential Hypertension, Rheumatoid Arthritis, and Metabolic Dysfunction-associated Steatotic Liver Disease (MASLD/MASH). She recently experienced an acute jaundice episode in August 2024, which is now considered resolved/improving.\nMedication Timeline and Adverse Events:\nChronic Medications: She has been on Metformin (since 2019) and Ramipril (since 2020).\nThe Adverse Event: Sarah began Methotrexate therapy for Rheumatoid Arthritis on 2024-06-03. Despite a dose reduction on 2024-07-15, the medication was discontinued on 2024-08-12 due to severe liver injury.\nTreatment: She underwent a 3-bag N-Acetylcysteine (NAC) IV protocol in August 2024 and was started on Ursodeoxycholic Acid (UDCA) on 2024-08-15.\nContraindications:\nSarah has a documented allergy/permanent contraindication to Methotrexate due to the severity of the resulting DILI.'",
+        "description": "This is the third encounter, an Outpatient Follow-up on May 6, 2024, with Dr. P. Stevens. The purpose was to review the normalization of LFTs and reconsider Methotrexate initiation. The assessment showed LFTs had normalized (ALT 35 U/L) following ~1.5 kg weight loss and lifestyle changes; the hepatitis workup was negative. The impression was a transient elevation likely related to MASLD, and the patient was cleared for Methotrexate. Vitals included BP 140/88 mmHg and BMI 31.2. The plan instructed the patient to begin Methotrexate (7.5mg weekly) and Folic acid (5mg weekly) starting June 3, 2024, with a strict schedule for LFT and FBC monitoring every 6 weeks.\n\nCase :\n8. Has a non-invasive liver screen been performed? If so, what is the likelihood of\nother liver diseases?\n\nYes — a non-invasive liver screen has been performed, and the results strongly suggest that the likelihood of other chronic liver diseases is low. In Encounter 3, she underwent a full viral hepatitis screen (HBsAg, HBcAb, HCV Ab), autoimmune panel (ANA, ASMA, LKM-1, IgG), and metabolic testing (Ferritin, TIBC), all of which were negative or normal, effectively ruling out chronic viral, autoimmune, and metabolic liver disease. Her Fib-4 score was 0.9, which falls into the low-risk category (<1.3) for significant fibrosis or cirrhosis, further reducing suspicion of alternative chronic pathology.\n\nIn addition, the USG (ultrasound) abdomen performed during her acute presentation showed coarse, steatotic liver parenchyma with hepatomegaly, consistent with MASLD/MASH, but critically no bile duct dilatation, no ascites, no portal hypertension, no nodularity, and patent portal/hepatic veins — all of which argue against other structural liver diseases such as primary biliary cholangitis, primary sclerosing cholangitis, infiltrative disorders, or obstructive causes. Taken together, both the screening panels, Fib-4 score, and imaging findings indicate that the likelihood of other liver diseases is very low, and her course is most consistent with MASLD with superimposed Methotrexate-induced DILI rather than another chronic liver disease. #non-invasive-liver-screen #non-invasive-liver-screen",
         "content": {
-            "title": "Patient Context",
-            "component": "PatientContext",
+            "title": "Encounter #3 - Outpatient Follow-up",
+            "component": "SingleEncounterDocument",
             "props": {
-                "patientData": {
-                    "patient": {
-                        "name": "Sarah Miller",
-                        "date_of_birth": "1981-06-03",
-                        "age": 43,
-                        "sex": "Female",
-                        "age_at_first_encounter": 43,
-                        "identifiers": {
-                            "mrn": "SM43850603"
+                "encounter": {
+                    "encounter_no": 3,
+                    "meta": {
+                        "visit_type": "Outpatient",
+                        "date_time": "2024-05-06T09:00:10",
+                        "provider": {
+                            "name": "Dr. P. Stevens",
+                            "specialty": "Unknown"
+                        },
+                        "ui_risk_color": "yellow"
+                    },
+                    "assessment": {
+                        "impression": "Follow-up regarding normalization of liver function tests and initiation of Methotrexate for rheumatoid arthritis management. Normalization of LFTs with ALT at 35 U/L. Negative workup for chronic liver conditions. Likely transient elevation possibly related to MASLD. Cleared for Methotrexate initiation.",
+                        "differential": [
+                            "Metabolic Dysfunction-associated Steatotic Liver Disease (MASLD)",
+                            "Acute self-limiting liver episode"
+                        ]
+                    },
+                    "chief_complaint": "Follow-up regarding normalization of liver function tests (LFTs) and potential initiation of Methotrexate for rheumatoid arthritis management.",
+                    "hpi": "Since the previous review, Sarah reports increased adherence to dietary advice and gentle walking most days, noting a ~1.5 kg weight loss since March. Comprehensive hepatitis workup (viral, autoimmune, metabolic) returned negative. ALT has decreased to 35 U/L, suggesting transient elevation. Patient is considered low-risk for MTX initiation.",
+                    "medications_prior": [],
+                    "physical_exam": {
+                        "general": "Vital Signs: BP 140/88 mmHg (sitting), HR 78 bpm, RR 15/min, Temp 36.6°C, SpO₂ 99% on room air.",
+                        "msk": "",
+                        "other_systems": "Anthropometrics: Weight 84 kg (BMI 31.2 kg/m²)."
+                    },
+                    "plan": {
+                        "investigations": {
+                            "imaging": [],
+                            "labs": [
+                                "LFTs every 6 weeks",
+                                "FBC every 6 weeks"
+                            ]
+                        },
+                        "management": {
+                            "follow_up": "Follow-up appointment set for early August to review treatment response, adherence to monitoring, and adjust plan. Instructed to begin Methotrexate on 2024-06-03. Emphasized adherence to strict 6-weekly monitoring schedule.",
+                            "medications_started": [
+                                {
+                                    "dose": "7.5mg",
+                                    "frequency": "weekly",
+                                    "name": "Methotrexate",
+                                    "route": "Unknown"
+                                },
+                                {
+                                    "dose": "5mg",
+                                    "frequency": "weekly",
+                                    "name": "Folic acid",
+                                    "route": "Unknown"
+                                }
+                            ]
                         }
                     },
-                    "riskLevel": "high",
-                    "primaryDiagnosis": "Severe Drug-Induced Liver Injury (Methotrexate-related)",
-                    "problem_list": [
-                        {
-                            "name": "Type 2 Diabetes Mellitus",
-                            "status": "active"
-                        },
-                        {
-                            "name": "Essential Hypertension",
-                            "status": "active"
-                        },
-                        {
-                            "name": "Rheumatoid Arthritis",
-                            "status": "active"
-                        },
-                        {
-                            "name": "Metabolic Dysfunction-associated Steatotic Liver Disease (MASLD/MASH)",
-                            "status": "active"
-                        },
-                        {
-                            "name": "Severe Methotrexate-induced Drug-Induced Liver Injury (DILI)",
-                            "status": "active"
-                        },
-                        {
-                            "name": "Acute jaundice episode (2024-08)",
-                            "status": "resolved/improving"
-                        }
-                    ],
-                    "medication_timeline": [
-                        {
-                            "name": "Metformin",
-                            "dose": "1000 mg",
-                            "route": "PO",
-                            "frequency": "BD",
-                            "start": "2019-01-01"
-                        },
-                        {
-                            "name": "Ramipril",
-                            "dose": "5 mg",
-                            "route": "PO",
-                            "frequency": "daily",
-                            "start": "2020-01-01"
-                        },
-                        {
-                            "name": "Ibuprofen",
-                            "dose": "variable",
-                            "route": "PO",
-                            "frequency": "PRN",
-                            "start": "2022-01-01"
-                        },
-                        {
-                            "name": "Simethicone",
-                            "dose": "standard",
-                            "route": "PO",
-                            "frequency": "PRN",
-                            "start": "2024-03-05"
-                        },
-                        {
-                            "name": "Methotrexate",
-                            "dose": "7.5 mg",
-                            "route": "PO",
-                            "frequency": "weekly",
-                            "start": "2024-06-03",
-                            "end": "2024-08-12"
-                        },
-                        {
-                            "name": "Folic Acid",
-                            "dose": "5 mg",
-                            "route": "PO",
-                            "frequency": "weekly",
-                            "start": "2024-06-03"
-                        },
-                        {
-                            "name": "Methotrexate (dose reduced)",
-                            "dose": "5 mg",
-                            "route": "PO",
-                            "frequency": "weekly",
-                            "start": "2024-07-15",
-                            "end": "2024-08-12"
-                        },
-                        {
-                            "name": "N-Acetylcysteine (NAC IV)",
-                            "dose": "3-bag protocol",
-                            "route": "IV",
-                            "frequency": "one-time protocol",
-                            "start": "2024-08-12",
-                            "end": "2024-08-17"
-                        },
-                        {
-                            "name": "Ursodeoxycholic Acid (UDCA)",
-                            "dose": "500 mg",
-                            "route": "PO",
-                            "frequency": "BID",
-                            "start": "2024-08-15"
-                        }
-                    ],
-                    "allergies": [
-                        "Methotrexate (severe DILI – permanent contraindication)"
-                    ]
-                }
+                    "reason_for_visit": "Follow-up for liver function tests and rheumatoid arthritis management."
+                },
+                "patient": {
+                    "name": "Sarah Miller",
+                    "sex": "Female",
+                    "age_at_first_encounter": 43
+                },
+                "encounterIndex": 3,
+                "dataSource": "Electronic Health Record"
             }
         },
-        "createdAt": "2025-10-14T16:16:23.245Z",
-        "updatedAt": "2025-11-21T08:36:27.123Z"
+        "createdAt": "2025-10-15T08:00:00.000Z",
+        "updatedAt": "2025-10-15T08:00:00.000Z"
     },
     {
         "id": "dashboard-item-1759906300004-single-encounter-7",
@@ -215,7 +478,7 @@
         "height": 600,
         "componentType": "SingleEncounterDocument",
         "color": "#ffffff",
-        "description": "This is the seventh and latest encounter recorded for the patient. It is an Inpatient visit at Hepatology Ward B on August 15, 2024. Dr. R. Sharma (Consultant Hepatologist) reviewed the patient on Day 3 of admission. The diagnosis was confirmed as Severe Drug-Induced Liver Injury (DILI) secondary to Methotrexate (RUCAM score 9/10) on a background of MASH. The patient remained significantly jaundiced (Bilirubin 190 μmol/L) but was alert (GCS 15) with no signs of hepatic encephalopathy. ALT levels were declining, and INR was stable. The management plan included Ursodeoxycholic Acid (UDCA) 500mg twice daily, daily INR evaluations, neurological checks, and a scheduled Fibroscan in three months. Rheumatology was advised to switch to non-hepatotoxic alternatives for RA.",
+        "description": "#latest encounter #latest encounter.\n This is the seventh and latest encounter recorded for the patient. It is an Inpatient visit at Hepatology Ward B on August 15, 2024. Dr. R. Sharma (Consultant Hepatologist) reviewed the patient on Day 3 of admission. The diagnosis was confirmed as Severe Drug-Induced Liver Injury (DILI) secondary to Methotrexate (RUCAM score 9/10) on a background of MASH. The patient remained significantly jaundiced (Bilirubin 190 μmol/L) but was alert (GCS 15) with no signs of hepatic encephalopathy. ALT levels were declining, and INR was stable. The management plan included Ursodeoxycholic Acid (UDCA) 500mg twice daily, daily INR evaluations, neurological checks, and a scheduled Fibroscan in three months. Rheumatology was advised to switch to non-hepatotoxic alternatives for RA.",
         "content": {
             "title": "Encounter #7 - Inpatient Hepatology Ward B",
             "component": "SingleEncounterDocument",
@@ -286,215 +549,163 @@
         "updatedAt": "2025-10-14T16:55:00.004Z"
     },
     {
-        "id": "dashboard-item-1759906246157-differential-diagnosis",
+        "id": "encounter-track-1",
         "type": "component",
-        "x": 620,
-        "y": 4911,
-        "width": 520,
-        "height": 500,
-        "componentType": "DifferentialDiagnosis",
-        "color": "#ffffff",
-        "description": "'Case :\n10. What is the treatment recommendation for the likely diagnosis?\nThe recommended treatment is immediate and permanent cessation of Methotrexate, which is identified as the definitive cause of her acute hepatocellular injury. This step was implemented urgently in Encounter 6 following worsening transaminitis and new-onset jaundice (ALT 490 U/L, bilirubin 110 μmol/L). She was admitted for hospital-based management, including intravenous N-acetylcysteine (NAC) following the 3-bag protocol, consistent with guidelines for severe hepatocellular DILI even when unrelated to paracetamol. Supportive care included close monitoring of INR, neurological status, and daily LFTs. The ultrasound confirmed no obstruction, supporting the DILI diagnosis.\n\nLong-term recommendations outlined in Encounter 7 include permanent Methotrexate contraindication, initiation of Ursodeoxycholic Acid (UDCA) for cholestasis, and arranging follow-up investigations such as Fibroscan in three months to assess for fibrosis progression. Rheumatology review is required to initiate a non-hepatotoxic alternative DMARD (e.g., Hydroxychloroquine or a biologic). Overall, the treatment approach focuses on removing the offending agent, treating acute hepatocellular injury, managing cholestatic symptoms, and avoiding future hepatotoxic medications.\n'",
+        "x": -1866,
+        "y": 3698,
+        "width": 2400,
+        "height": 400,
+        "componentType": "EncounterTrack",
         "content": {
-            "title": "Differential Diagnosis",
-            "component": "DifferentialDiagnosis",
             "props": {
-                "patientData": {
-                    "encounters": [
-                        {
-                            "encounter_no": 6,
-                            "assessment": {
-                                "impression": "Severe acute Drug-Induced Liver Injury (DILI) secondary to Methotrexate with developing cholestasis",
-                                "differential": [
-                                    "Methotrexate-induced hepatocellular DILI (most likely)",
-                                    "Acute-on-chronic liver injury due to underlying MASLD/MASH",
-                                    "Acute viral hepatitis (HBV/HCV unlikely but part of workup)",
-                                    "Autoimmune hepatitis (screen previously negative)",
-                                    "Mechanical biliary obstruction (excluded by ultrasound)",
-                                    "Ischemic hepatitis (no shock, normal hemodynamics)",
-                                    "Sepsis-associated liver injury (no fever or hemodynamic instability)"
-                                ]
-                            },
-                            "rucam_ctcae_analysis": {
-                                "rucam": {
-                                    "rows": [
-                                        [
-                                            "1",
-                                            "Time to onset from drug start",
-                                            "MTX started 2024-06-03 → severe DILI by 2024-08-12 (≈10 weeks)",
-                                            "+2",
-                                            "Typical 5–90 day window for idiosyncratic hepatocellular DILI."
-                                        ],
-                                        [
-                                            "2",
-                                            "Course after stopping drug",
-                                            "ALT decreased from 490 → 420 within 3 days of cessation",
-                                            "+3",
-                                            "Supports drug causality (fall ≥50% in <8 days expected)."
-                                        ],
-                                        [
-                                            "5",
-                                            "Exclusion of non-drug causes",
-                                            "Viral hepatitis panel negative; autoimmune markers negative; ultrasound showed no obstruction",
-                                            "+2",
-                                            "Alternative causes convincingly excluded."
-                                        ]
-                                    ]
-                                },
-                                "reasoning": "The clinical pattern demonstrates severe hepatocellular injury with ALT 490 U/L, AST 350 U/L, and bilirubin >100 μmol/L. MTX exposure timeline fits perfectly for idiosyncratic hepatocellular DILI. Viral, autoimmune, and biliary causes were excluded through negative serology and normal biliary imaging. Hemodynamics remained stable, making ischemic hepatitis unlikely. No signs of infection to suggest sepsis-related liver injury. MASLD/MASH acted as a susceptibility factor but not the primary cause. Therefore, MTX toxicity remains the leading diagnosis."
-                            }
-                        }
-                    ]
-                }
+                "encounters": [
+                    {
+                        "encounter_no": 1,
+                        "date": "2024-03-05",
+                        "type": "General Practice",
+                        "provider": "Dr. P. Stevens",
+                        "chief_complaint": "Increased fatigue over the past 4-5 months.",
+                        "medications": [
+                            "Metformin 1000mg BD",
+                            "Ramipril 5mg OD",
+                            "Ibuprofen 4-5x/week"
+                        ],
+                        "impression": "Suboptimal control of T2DM/HTN, Chronic Fatigue Syndrome possibly related to MASLD. Mild effusion in right MCP joint.",
+                        "differential_diagnosis": [
+                            "Metabolic Dysfunction-associated Steatotic Liver Disease (MASLD)",
+                            "Uncontrolled T2DM",
+                            "Rheumatoid Arthritis (conservatively managed)"
+                        ],
+                        "notes": "Baseline ALT 78 U/L detected. Patient reports debilitating fatigue. Advised 5% weight loss target.",
+                        "casual_reason": "Elevated ALT (78 U/L) and fatigue attributed to underlying Metabolic Dysfunction-associated Steatotic Liver Disease (MASLD) driven by Class I obesity (BMI 32.0) and suboptimal T2DM control."
+                    },
+                    {
+                        "encounter_no": 2,
+                        "date": "2024-04-01",
+                        "type": "General Practice",
+                        "provider": "Dr. P. Stevens",
+                        "chief_complaint": "Review of abnormal liver function tests and planning for rheumatoid arthritis treatment.",
+                        "medications": [
+                            "Metformin 1000mg BD",
+                            "Ramipril 5mg OD"
+                        ],
+                        "impression": "Review of abnormal LFTs. Suspicion of MASLD. Decision to defer Methotrexate initiation pending liver safety workup.",
+                        "differential_diagnosis": [
+                            "MASLD (likely)",
+                            "Viral Hepatitis (to be excluded)",
+                            "Autoimmune Hepatitis (to be excluded)"
+                        ],
+                        "notes": "ALT 78 U/L. Explicitly advised against NSAID use. Ordered comprehensive hepatitis and autoimmune panel.",
+                        "casual_reason": "Persistent ALT elevation (78 U/L) confirms ongoing hepatocellular inflammation, likely due to unmanaged MASLD, necessitating deferral of hepatotoxic medication (MTX)."
+                    },
+                    {
+                        "encounter_no": 3,
+                        "date": "2024-05-06",
+                        "type": "General Practice",
+                        "provider": "Dr. P. Stevens",
+                        "chief_complaint": "Follow-up regarding the normalization of liver function tests (LFTs) and potential initiation of Methotrexate.",
+                        "medications": [
+                            "Metformin 1000mg BD",
+                            "Ramipril 5mg OD"
+                        ],
+                        "impression": "Normalization of LFTs (ALT 35 U/L). Hepatitis/Autoimmune workup negative. Clearance granted for Methotrexate initiation.",
+                        "differential_diagnosis": [
+                            "Transient liver enzyme elevation (resolved)",
+                            "MASLD (stable)"
+                        ],
+                        "notes": "Full normalization confirmed. Patient cleared for MTX start on 2024-06-03. Strict monitoring schedule established.",
+                        "casual_reason": "Normalization of ALT (35 U/L) attributed to successful lifestyle modifications (dietary changes, weight loss) and resolution of the transient MASLD flare."
+                    },
+                    {
+                        "encounter_no": 4,
+                        "date": "2024-06-03",
+                        "type": "General Practice",
+                        "provider": "Dr. P. Stevens",
+                        "chief_complaint": "Initiation of Disease-Modifying Anti-Rheumatic Drug (DMARD) - Methotrexate (MTX) for Rheumatoid Arthritis (RA) management.",
+                        "medications": [
+                            "Methotrexate 7.5mg weekly (Start)",
+                            "Folic Acid 5mg weekly (Start)"
+                        ],
+                        "impression": "Initiation of DMARD therapy for RA. Patient educated on hepatotoxicity risks and monitoring requirements.",
+                        "differential_diagnosis": [
+                            "Rheumatoid Arthritis (Active)"
+                        ],
+                        "notes": "MTX started at 7.5mg. Baseline LFTs normal. Next check scheduled for July 15.",
+                        "casual_reason": "Baseline stability established; no biomarker derangement yet as Methotrexate therapy is just commencing."
+                    },
+                    {
+                        "encounter_no": 5,
+                        "date": "2024-07-15",
+                        "type": "General Practice",
+                        "provider": "Dr. P. Stevens",
+                        "chief_complaint": "Routine Methotrexate (MTX) monitoring. Reports of new intermittent nausea and increased fatigue.",
+                        "medications": [
+                            "Methotrexate 5mg weekly (Reduced Dose)",
+                            "Folic Acid 5mg weekly"
+                        ],
+                        "impression": "Significant elevation in ALT to 185 U/L (4.6x ULN). Intermittent nausea reported. RA symptoms improved.",
+                        "differential_diagnosis": [
+                            "Methotrexate-induced DILI",
+                            "MASLD flare"
+                        ],
+                        "notes": "CRITICAL DECISION: MTX reduced to 5mg rather than discontinued despite ALT >3x ULN. Hepatology referral initiated (Routine).",
+                        "casual_reason": "Sharp rise in ALT to 185 U/L (4.6x ULN) indicates acute hepatocellular injury caused by Methotrexate toxicity, exacerbated by the underlying steatotic liver substrate."
+                    },
+                    {
+                        "encounter_no": 6,
+                        "date": "2024-08-12",
+                        "type": "Emergency Department",
+                        "provider": "Dr. P. Stevens / ED Registrar",
+                        "chief_complaint": "Urgent review for new onset jaundice, dark urine, and constant, severe nausea leading to anorexia.",
+                        "medications": [
+                            "N-acetylcysteine (NAC) Infusion (Started)"
+                        ],
+                        "impression": "Severe Acute Drug-Induced Liver Injury (DILI) with developing cholestasis. Jaundice and dark urine present.",
+                        "differential_diagnosis": [
+                            "Severe hepatocellular DILI (MTX-related)",
+                            "Biliary obstruction (ruled out by USG)"
+                        ],
+                        "notes": "Crisis point: ALT 490 U/L, Bilirubin 110 µmol/L. MTX stopped immediately. Admitted for NAC protocol.",
+                        "casual_reason": "Massive spike in ALT (490 U/L) and onset of jaundice (Bilirubin 110 µmol/L) caused by cumulative Methotrexate toxicity following the failure to discontinue the drug during the July warning signs."
+                    },
+                    {
+                        "encounter_no": 7,
+                        "date": "2024-08-15",
+                        "type": "Inpatient Hepatology",
+                        "provider": "Dr. R. Sharma",
+                        "chief_complaint": "Inpatient review for Severe Drug-Induced Liver Injury (DILI) stabilization.",
+                        "medications": [
+                            "Ursodeoxycholic Acid (UDCA) 500mg BD",
+                            "NAC Protocol (Completing Aug 17)"
+                        ],
+                        "impression": "Severe cholestatic DILI on background of MASH. RUCAM score 9/10. Synthetic function preserved (INR 1.1).",
+                        "differential_diagnosis": [
+                            "Severe DILI (Cholestatic phase)",
+                            "MASH"
+                        ],
+                        "notes": "MTX permanently contraindicated. Bilirubin peaked at 190 µmol/L. Fibroscan ordered for 3 months post-discharge.",
+                        "casual_reason": "Rising Bilirubin (190 µmol/L) despite falling ALT reflects the 'cholestatic phase' of recovery, where bile excretion remains impaired even as active hepatocellular necrosis subsides following MTX cessation."
+                    }
+                ],
+                "showHandles": true
             }
         },
-        "createdAt": "2025-10-14T16:50:46.157Z",
-        "updatedAt": "2025-11-24T15:05:21.702Z"
+        "updatedAt": "2025-11-24T15:02:58.989Z"
     },
     {
-        "id": "dashboard-item-1759906219477-adverse-event-analytics",
-        "type": "component",
-        "x": -4031,
-        "y": 4444,
-        "width": 1600,
-        "height": "auto",
-        "componentType": "AdverseEventAnalytics",
+        "id": "iframe-item-easl-interface",
+        "type": "iframe",
+        "x": 1100,
+        "y": 7800,
+        "width": 1800,
+        "height": 1200,
+        "title": "EASL Web Interface",
+        "iframeUrl": "https://easl-board.vercel.app/",
         "color": "#ffffff",
-        "description": "",
-        "content": {
-            "title": "Adverse Event Analytics",
-            "component": "AdverseEventAnalytics",
-            "props": {
-                "patientData": {
-                    "adverseEvents": [
-                        {
-                            "event": "Drug-Induced Liver Injury (DILI)",
-                            "severity": "Severe",
-                            "description": "Severe hepatocellular DILI caused by Methotrexate, presenting with ALT 490 U/L (12× ULN), AST 350 U/L, and progressive jaundice."
-                        },
-                        {
-                            "event": "Cholestatic Jaundice",
-                            "severity": "Severe",
-                            "description": "Bilirubin elevation from 110 to 190 μmol/L with marked jaundice; consistent with cholestatic component of acute DILI."
-                        },
-                        {
-                            "event": "Methotrexate Toxicity",
-                            "severity": "Severe",
-                            "description": "Progressive hepatotoxicity after MTX initiation; ALT 185 U/L within 6 weeks; continued exposure led to severe acute DILI requiring hospitalization."
-                        },
-                        {
-                            "event": "Acute-on-Chronic Liver Injury",
-                            "severity": "Moderate–Severe",
-                            "description": "Acute hepatocellular necrosis superimposed on underlying MASLD/MASH, demonstrated by coarse echogenic liver on ultrasound."
-                        }
-                    ],
-                    "rucam_ctcae_analysis": {
-                        "rucam": {
-                            "title": "RUCAM Scoring (Hepatocellular Pattern)",
-                            "columns": [
-                                "#",
-                                "Parameter",
-                                "Key findings from this case",
-                                "Score",
-                                "Explanation"
-                            ],
-                            "rows": [
-                                [
-                                    "1",
-                                    "Time to onset (from drug start to injury)",
-                                    "MTX started 2024-06-03 → ALT rise noted by 2024-07-15 (~6 weeks)",
-                                    "+2",
-                                    "Typical 5–90 day window for idiosyncratic hepatocellular DILI."
-                                ],
-                                [
-                                    "2",
-                                    "Course after stopping the drug",
-                                    "ALT decreased from 490 → 420 U/L by 2024-08-15 post-MTX cessation",
-                                    "+3",
-                                    "Fall ≥50% within 8 days supports drug causality."
-                                ],
-                                [
-                                    "3",
-                                    "Risk factors",
-                                    "Female (+0), Age 43 (+0), underlying MASLD",
-                                    "0",
-                                    "Neither age nor sex adds RUCAM points; MASLD is a cofactor but not scored."
-                                ],
-                                [
-                                    "4",
-                                    "Concomitant drugs",
-                                    "Metformin, Ramipril, Ibuprofen (non-hepatotoxic at recorded doses)",
-                                    "0",
-                                    "No confounding hepatotoxic co-medication recorded."
-                                ],
-                                [
-                                    "5",
-                                    "Exclusion of non-drug causes",
-                                    "Negative viral serology, negative ANA/ASMA, no biliary obstruction on ultrasound",
-                                    "+2",
-                                    "Competing etiologies reasonably excluded."
-                                ],
-                                [
-                                    "6",
-                                    "Previous information on hepatotoxicity",
-                                    "Methotrexate well-recognized hepatotoxin with documented DILI cases",
-                                    "+2",
-                                    "Established hepatotoxic risk."
-                                ],
-                                [
-                                    "7",
-                                    "Response to re-exposure",
-                                    "Not applicable (no re-challenge)",
-                                    "0",
-                                    "---"
-                                ]
-                            ],
-                            "total_score": 9,
-                            "causality_category": "Highly Probable"
-                        },
-                        "ctcae": {
-                            "title": "CTCAE Hepatic Toxicity Scoring",
-                            "columns": [
-                                "Criterion",
-                                "Observed / Inferred",
-                                "CTCAE Grade",
-                                "Explanation"
-                            ],
-                            "rows": [
-                                [
-                                    "ALT/AST",
-                                    "ALT 490 U/L (≈12× ULN), AST 350 U/L",
-                                    "Grade 3",
-                                    "ALT 5–20× ULN = Grade 3 severity."
-                                ],
-                                [
-                                    "Total Bilirubin",
-                                    "Bilirubin peaked at 190 μmol/L (≈11 mg/dL)",
-                                    "Grade 3",
-                                    ">3× ULN and clinical jaundice."
-                                ],
-                                [
-                                    "INR / Coagulopathy",
-                                    "INR remained 1.05–1.1 (normal)",
-                                    "Grade 1",
-                                    "No synthetic dysfunction; cannot qualify as Grade 4."
-                                ],
-                                [
-                                    "Clinical Presentation",
-                                    "Severe nausea, anorexia, jaundice; no hepatic encephalopathy",
-                                    "Grade 2–3",
-                                    "Significant symptoms without CNS involvement."
-                                ]
-                            ],
-                            "overall_grade": "CTCAE Grade 3 — Severe but not life-threatening (no ALF or encephalopathy)"
-                        },
-                        "reasoning": "The patient developed acute severe hepatocellular DILI approximately 6 weeks after initiating Methotrexate. The trajectory shows progressive rise in ALT from 35 to 185 to 490 U/L, accompanied by marked jaundice and cholestasis. Viral, autoimmune, and biliary causes were excluded. INR remained stable and GCS remained 15 throughout hospitalization, confirming absence of acute liver failure. Ultrasound demonstrated severe MASLD, indicating chronic vulnerability. RUCAM score is 9 (highly probable). CTCAE grading corresponds to Grade 3 hepatic injury due to elevated bilirubin and transaminases without synthetic failure. Management appropriately included immediate MTX cessation, IV NAC protocol, hepatology admission, and initiation of UDCA."
-                    }
-                }
-            }
-        },
-        "createdAt": "2025-10-14T16:50:19.477Z",
-        "updatedAt": "2025-11-21T08:36:24.123Z"
+        "rotation": 0,
+        "conversationHistory": [],
+        "createdAt": "2025-10-28T12:00:00.000Z",
+        "updatedAt": "2025-10-28T12:00:00.000Z"
     },
     {
         "id": "lab-track-1",
@@ -673,381 +884,5 @@
         },
         "updatedAt": "2025-11-24T15:03:50.962Z",
         "description": "'\n- Which liver function tests are elevated?\n- When did these become abnormal?\n- How has her diabetes control been?\n\nLab Track Description: Liver Function and Diabetes Monitoring (March–August 2024)\n\nThis component tracks longitudinal laboratory data for Liver Function Tests (LFTs) and Diabetes Control (HbA1c) across seven encounters between 2024-03-05 and 2024-08-15.\n\nSummary of Trends:\n\nLiver Enzymes: The patient exhibited a biphasic pattern. Mild elevations in March normalized by May, followed by a severe, progressive spike in ALT and AST starting in July and peaking in August.\n\nBilirubin: Remained normal until a sharp increase in August, indicating late-stage acute injury.\n\nSynthetic Function: INR remained stable and within reference range (0.8–1.2) throughout the period.\n\nDiabetes: HbA1c levels remained consistently above the reference range, indicating suboptimal glycemic control.\n\nClinical Q&A:\n\nQ: Which liver function tests are elevated?\n\nA: ALT, AST, and Total Bilirubin are significantly elevated.\n\nALT peaked at 490 U/L (Ref: 0-40).\n\nAST peaked at 350 U/L (Ref: 0-35).\n\nTotal Bilirubin peaked at 190 µmol/L (Ref: 0-21).\n\nNote: INR remained normal (1.1), indicating preserved clotting function.\n\nQ: When did these become abnormal?\n\nA: While there was a mild, transient elevation in March (ALT 78), the tests normalized in May. The significant abnormality began on July 15, 2024, when ALT spiked to 185 U/L and AST to 130 U/L. This worsened drastically by August 12, 2024, when Bilirubin also spiked to 110 µmol/L.\n\nQ: How has her diabetes control been?\n\nA: Her diabetes control has been suboptimal and slightly worsening.\n\nHbA1c values were consistently elevated above the reference maximum of 48 mmol/mol.\n\nValues recorded were: 58 mmol/mol (March), 56 mmol/mol (May), and 60 mmol/mol (July).\n'"
-    },
-    {
-        "id": "dashboard-item-1759906300004-single-encounter-3",
-        "type": "component",
-        "x": -2000,
-        "y": 800,
-        "width": 500,
-        "height": 600,
-        "componentType": "SingleEncounterDocument",
-        "color": "#ffffff",
-        "description": "This is the third encounter, an Outpatient Follow-up on May 6, 2024, with Dr. P. Stevens. The purpose was to review the normalization of LFTs and reconsider Methotrexate initiation. The assessment showed LFTs had normalized (ALT 35 U/L) following ~1.5 kg weight loss and lifestyle changes; the hepatitis workup was negative. The impression was a transient elevation likely related to MASLD, and the patient was cleared for Methotrexate. Vitals included BP 140/88 mmHg and BMI 31.2. The plan instructed the patient to begin Methotrexate (7.5mg weekly) and Folic acid (5mg weekly) starting June 3, 2024, with a strict schedule for LFT and FBC monitoring every 6 weeks.\n'Case :\n8. Has a non-invasive liver screen been performed? If so, what is the likelihood of\nother liver diseases?\n\nYes — a non-invasive liver screen has been performed, and the results strongly suggest that the likelihood of other chronic liver diseases is low. In Encounter 3, she underwent a full viral hepatitis screen (HBsAg, HBcAb, HCV Ab), autoimmune panel (ANA, ASMA, LKM-1, IgG), and metabolic testing (Ferritin, TIBC), all of which were negative or normal, effectively ruling out chronic viral, autoimmune, and metabolic liver disease. Her Fib-4 score was 0.9, which falls into the low-risk category (<1.3) for significant fibrosis or cirrhosis, further reducing suspicion of alternative chronic pathology.\n\nIn addition, the USG (ultrasound) abdomen performed during her acute presentation showed coarse, steatotic liver parenchyma with hepatomegaly, consistent with MASLD/MASH, but critically no bile duct dilatation, no ascites, no portal hypertension, no nodularity, and patent portal/hepatic veins — all of which argue against other structural liver diseases such as primary biliary cholangitis, primary sclerosing cholangitis, infiltrative disorders, or obstructive causes. Taken together, both the screening panels, Fib-4 score, and imaging findings indicate that the likelihood of other liver diseases is very low, and her course is most consistent with MASLD with superimposed Methotrexate-induced DILI rather than another chronic liver disease.'",
-        "content": {
-            "title": "Encounter #3 - Outpatient Follow-up",
-            "component": "SingleEncounterDocument",
-            "props": {
-                "encounter": {
-                    "encounter_no": 3,
-                    "meta": {
-                        "visit_type": "Outpatient",
-                        "date_time": "2024-05-06T09:00:10",
-                        "provider": {
-                            "name": "Dr. P. Stevens",
-                            "specialty": "Unknown"
-                        },
-                        "ui_risk_color": "yellow"
-                    },
-                    "assessment": {
-                        "impression": "Follow-up regarding normalization of liver function tests and initiation of Methotrexate for rheumatoid arthritis management. Normalization of LFTs with ALT at 35 U/L. Negative workup for chronic liver conditions. Likely transient elevation possibly related to MASLD. Cleared for Methotrexate initiation.",
-                        "differential": [
-                            "Metabolic Dysfunction-associated Steatotic Liver Disease (MASLD)",
-                            "Acute self-limiting liver episode"
-                        ]
-                    },
-                    "chief_complaint": "Follow-up regarding normalization of liver function tests (LFTs) and potential initiation of Methotrexate for rheumatoid arthritis management.",
-                    "hpi": "Since the previous review, Sarah reports increased adherence to dietary advice and gentle walking most days, noting a ~1.5 kg weight loss since March. Comprehensive hepatitis workup (viral, autoimmune, metabolic) returned negative. ALT has decreased to 35 U/L, suggesting transient elevation. Patient is considered low-risk for MTX initiation.",
-                    "medications_prior": [],
-                    "physical_exam": {
-                        "general": "Vital Signs: BP 140/88 mmHg (sitting), HR 78 bpm, RR 15/min, Temp 36.6°C, SpO₂ 99% on room air.",
-                        "msk": "",
-                        "other_systems": "Anthropometrics: Weight 84 kg (BMI 31.2 kg/m²)."
-                    },
-                    "plan": {
-                        "investigations": {
-                            "imaging": [],
-                            "labs": [
-                                "LFTs every 6 weeks",
-                                "FBC every 6 weeks"
-                            ]
-                        },
-                        "management": {
-                            "follow_up": "Follow-up appointment set for early August to review treatment response, adherence to monitoring, and adjust plan. Instructed to begin Methotrexate on 2024-06-03. Emphasized adherence to strict 6-weekly monitoring schedule.",
-                            "medications_started": [
-                                {
-                                    "dose": "7.5mg",
-                                    "frequency": "weekly",
-                                    "name": "Methotrexate",
-                                    "route": "Unknown"
-                                },
-                                {
-                                    "dose": "5mg",
-                                    "frequency": "weekly",
-                                    "name": "Folic acid",
-                                    "route": "Unknown"
-                                }
-                            ]
-                        }
-                    },
-                    "reason_for_visit": "Follow-up for liver function tests and rheumatoid arthritis management."
-                },
-                "patient": {
-                    "name": "Sarah Miller",
-                    "sex": "Female",
-                    "age_at_first_encounter": 43
-                },
-                "encounterIndex": 3,
-                "dataSource": "Electronic Health Record"
-            }
-        },
-        "createdAt": "2025-10-15T08:00:00.000Z",
-        "updatedAt": "2025-10-15T08:00:00.000Z"
-    },
-    {
-        "id": "dashboard-item-1759906300004-single-encounter-5",
-        "type": "component",
-        "x": -600,
-        "y": 800,
-        "width": 500,
-        "height": 600,
-        "componentType": "SingleEncounterDocument",
-        "color": "#ffffff",
-        "description": "This is the fifth encounter, an Outpatient visit on July 15, 2024, with Dr. P. Stevens (Rheumatology). The patient presented for routine Methotrexate monitoring but reported new intermittent nausea and increased fatigue. The assessment identified Methotrexate-induced Drug-Induced Liver Injury (DILI) with a significantly elevated ALT of 185 U/L (4.6x ULN). While RA symptoms improved, diabetes control deteriorated (HbA1c 60 mmol/mol). Vitals showed BP 144/92 mmHg. The plan involved repeating LFTs in four weeks, advising vigilance for jaundice, and adjusting the medication regimen to Methotrexate 5mg weekly while recommending a Hepatology consultation. Next available clinical visit 15 December 2025.",
-        "content": {
-            "title": "Encounter #5 - Outpatient",
-            "component": "SingleEncounterDocument",
-            "props": {
-                "encounter": {
-                    "encounter_no": 5,
-                    "meta": {
-                        "visit_type": "Outpatient",
-                        "date_time": "2024-07-15T14:00:30",
-                        "provider": {
-                            "name": "Dr. P. Stevens",
-                            "specialty": "Rheumatology"
-                        },
-                        "ui_risk_color": "yellow"
-                    },
-                    "assessment": {
-                        "impression": "Methotrexate-induced Drug-Induced Liver Injury (DILI) presenting with elevated ALT (185 U/L, 4.6x ULN), with new intermittent nausea and increased fatigue. Rheumatoid arthritis symptoms are improving on Methotrexate. Diabetes control has deteriorated with HbA1c rising to 60 mmol/mol, signalling worsening glycaemia during MTX therapy and possible contribution to fatigue.",
-                        "differential": [
-                            "Methotrexate-induced Drug-Induced Liver Injury (DILI)",
-                            "Underlying MASLD risk factors"
-                        ]
-                    },
-                    "chief_complaint": "Routine Methotrexate (MTX) monitoring. Reports of new intermittent nausea and increased fatigue.",
-                    "hpi": "Sarah Miller, a 43-year-old female, presents for routine Methotrexate monitoring. She reports ~1 kg unintentional weight loss over the past month, attributed to reduced appetite and intermittent nausea, primarily in the evenings. No vomiting or diarrhea. Fatigue levels have returned to pre-MTX initiation severity. Rheumatoid arthritis symptoms have significantly improved with diminished joint pain and increased daily function since starting Methotrexate. Recent labs show ALT elevated to 185 U/L (4.6x ULN). HbA1c has worsened to 60 mmol/mol, indicating declining diabetes control despite weight loss.",
-                    "medications_prior": [],
-                    "physical_exam": {
-                        "general": "Vital Signs: BP 144/92 mmHg (sitting), HR 88 bpm, RR 16/min, Temp 36.8°C, SpO₂ 98% on room air.",
-                        "msk": "Joint pain has diminished.",
-                        "other_systems": "Weight 83 kg (BMI 30.8 kg/m²). Despite some weight reduction, diabetes control is worsening with higher HbA1c and increased metabolic fatigue."
-                    },
-                    "plan": {
-                        "investigations": {
-                            "imaging": [],
-                            "labs": [
-                                "Repeat liver function tests in four weeks",
-                                "HbA1c monitoring recommended due to recent deterioration"
-                            ]
-                        },
-                        "management": {
-                            "follow_up": "Follow up in four weeks. Advised to remain vigilant for any worsening of symptoms or new signs of liver dysfunction such as jaundice, further exacerbated fatigue, or darker urine. Ensure adherence to adjusted Methotrexate regimen. Attend Hepatology consultation.",
-                            "medications_started": [
-                                {
-                                    "dose": "5mg",
-                                    "frequency": "weekly",
-                                    "name": "Methotrexate",
-                                    "route": ""
-                                }
-                            ]
-                        }
-                    },
-                    "reason_for_visit": "Routine Methotrexate monitoring and management of new symptoms of nausea and fatigue, and elevated liver enzymes."
-                },
-                "patient": {
-                    "name": "Sarah Miller",
-                    "sex": "Female",
-                    "age_at_first_encounter": 43
-                },
-                "encounterIndex": 5,
-                "dataSource": "Nervecentre"
-            }
-        },
-        "createdAt": "2025-10-15T08:00:00.000Z",
-        "updatedAt": "2025-10-15T08:00:00.000Z"
-    },
-    {
-        "id": "encounter-track-1",
-        "type": "component",
-        "x": -1866,
-        "y": 3698,
-        "width": 2400,
-        "height": 400,
-        "componentType": "EncounterTrack",
-        "content": {
-            "props": {
-                "encounters": [
-                    {
-                        "encounter_no": 1,
-                        "date": "2024-03-05",
-                        "type": "General Practice",
-                        "provider": "Dr. P. Stevens",
-                        "chief_complaint": "Increased fatigue over the past 4-5 months.",
-                        "medications": [
-                            "Metformin 1000mg BD",
-                            "Ramipril 5mg OD",
-                            "Ibuprofen 4-5x/week"
-                        ],
-                        "impression": "Suboptimal control of T2DM/HTN, Chronic Fatigue Syndrome possibly related to MASLD. Mild effusion in right MCP joint.",
-                        "differential_diagnosis": [
-                            "Metabolic Dysfunction-associated Steatotic Liver Disease (MASLD)",
-                            "Uncontrolled T2DM",
-                            "Rheumatoid Arthritis (conservatively managed)"
-                        ],
-                        "notes": "Baseline ALT 78 U/L detected. Patient reports debilitating fatigue. Advised 5% weight loss target.",
-                        "casual_reason": "Elevated ALT (78 U/L) and fatigue attributed to underlying Metabolic Dysfunction-associated Steatotic Liver Disease (MASLD) driven by Class I obesity (BMI 32.0) and suboptimal T2DM control."
-                    },
-                    {
-                        "encounter_no": 2,
-                        "date": "2024-04-01",
-                        "type": "General Practice",
-                        "provider": "Dr. P. Stevens",
-                        "chief_complaint": "Review of abnormal liver function tests and planning for rheumatoid arthritis treatment.",
-                        "medications": [
-                            "Metformin 1000mg BD",
-                            "Ramipril 5mg OD"
-                        ],
-                        "impression": "Review of abnormal LFTs. Suspicion of MASLD. Decision to defer Methotrexate initiation pending liver safety workup.",
-                        "differential_diagnosis": [
-                            "MASLD (likely)",
-                            "Viral Hepatitis (to be excluded)",
-                            "Autoimmune Hepatitis (to be excluded)"
-                        ],
-                        "notes": "ALT 78 U/L. Explicitly advised against NSAID use. Ordered comprehensive hepatitis and autoimmune panel.",
-                        "casual_reason": "Persistent ALT elevation (78 U/L) confirms ongoing hepatocellular inflammation, likely due to unmanaged MASLD, necessitating deferral of hepatotoxic medication (MTX)."
-                    },
-                    {
-                        "encounter_no": 3,
-                        "date": "2024-05-06",
-                        "type": "General Practice",
-                        "provider": "Dr. P. Stevens",
-                        "chief_complaint": "Follow-up regarding the normalization of liver function tests (LFTs) and potential initiation of Methotrexate.",
-                        "medications": [
-                            "Metformin 1000mg BD",
-                            "Ramipril 5mg OD"
-                        ],
-                        "impression": "Normalization of LFTs (ALT 35 U/L). Hepatitis/Autoimmune workup negative. Clearance granted for Methotrexate initiation.",
-                        "differential_diagnosis": [
-                            "Transient liver enzyme elevation (resolved)",
-                            "MASLD (stable)"
-                        ],
-                        "notes": "Full normalization confirmed. Patient cleared for MTX start on 2024-06-03. Strict monitoring schedule established.",
-                        "casual_reason": "Normalization of ALT (35 U/L) attributed to successful lifestyle modifications (dietary changes, weight loss) and resolution of the transient MASLD flare."
-                    },
-                    {
-                        "encounter_no": 4,
-                        "date": "2024-06-03",
-                        "type": "General Practice",
-                        "provider": "Dr. P. Stevens",
-                        "chief_complaint": "Initiation of Disease-Modifying Anti-Rheumatic Drug (DMARD) - Methotrexate (MTX) for Rheumatoid Arthritis (RA) management.",
-                        "medications": [
-                            "Methotrexate 7.5mg weekly (Start)",
-                            "Folic Acid 5mg weekly (Start)"
-                        ],
-                        "impression": "Initiation of DMARD therapy for RA. Patient educated on hepatotoxicity risks and monitoring requirements.",
-                        "differential_diagnosis": [
-                            "Rheumatoid Arthritis (Active)"
-                        ],
-                        "notes": "MTX started at 7.5mg. Baseline LFTs normal. Next check scheduled for July 15.",
-                        "casual_reason": "Baseline stability established; no biomarker derangement yet as Methotrexate therapy is just commencing."
-                    },
-                    {
-                        "encounter_no": 5,
-                        "date": "2024-07-15",
-                        "type": "General Practice",
-                        "provider": "Dr. P. Stevens",
-                        "chief_complaint": "Routine Methotrexate (MTX) monitoring. Reports of new intermittent nausea and increased fatigue.",
-                        "medications": [
-                            "Methotrexate 5mg weekly (Reduced Dose)",
-                            "Folic Acid 5mg weekly"
-                        ],
-                        "impression": "Significant elevation in ALT to 185 U/L (4.6x ULN). Intermittent nausea reported. RA symptoms improved.",
-                        "differential_diagnosis": [
-                            "Methotrexate-induced DILI",
-                            "MASLD flare"
-                        ],
-                        "notes": "CRITICAL DECISION: MTX reduced to 5mg rather than discontinued despite ALT >3x ULN. Hepatology referral initiated (Routine).",
-                        "casual_reason": "Sharp rise in ALT to 185 U/L (4.6x ULN) indicates acute hepatocellular injury caused by Methotrexate toxicity, exacerbated by the underlying steatotic liver substrate."
-                    },
-                    {
-                        "encounter_no": 6,
-                        "date": "2024-08-12",
-                        "type": "Emergency Department",
-                        "provider": "Dr. P. Stevens / ED Registrar",
-                        "chief_complaint": "Urgent review for new onset jaundice, dark urine, and constant, severe nausea leading to anorexia.",
-                        "medications": [
-                            "N-acetylcysteine (NAC) Infusion (Started)"
-                        ],
-                        "impression": "Severe Acute Drug-Induced Liver Injury (DILI) with developing cholestasis. Jaundice and dark urine present.",
-                        "differential_diagnosis": [
-                            "Severe hepatocellular DILI (MTX-related)",
-                            "Biliary obstruction (ruled out by USG)"
-                        ],
-                        "notes": "Crisis point: ALT 490 U/L, Bilirubin 110 µmol/L. MTX stopped immediately. Admitted for NAC protocol.",
-                        "casual_reason": "Massive spike in ALT (490 U/L) and onset of jaundice (Bilirubin 110 µmol/L) caused by cumulative Methotrexate toxicity following the failure to discontinue the drug during the July warning signs."
-                    },
-                    {
-                        "encounter_no": 7,
-                        "date": "2024-08-15",
-                        "type": "Inpatient Hepatology",
-                        "provider": "Dr. R. Sharma",
-                        "chief_complaint": "Inpatient review for Severe Drug-Induced Liver Injury (DILI) stabilization.",
-                        "medications": [
-                            "Ursodeoxycholic Acid (UDCA) 500mg BD",
-                            "NAC Protocol (Completing Aug 17)"
-                        ],
-                        "impression": "Severe cholestatic DILI on background of MASH. RUCAM score 9/10. Synthetic function preserved (INR 1.1).",
-                        "differential_diagnosis": [
-                            "Severe DILI (Cholestatic phase)",
-                            "MASH"
-                        ],
-                        "notes": "MTX permanently contraindicated. Bilirubin peaked at 190 µmol/L. Fibroscan ordered for 3 months post-discharge.",
-                        "casual_reason": "Rising Bilirubin (190 µmol/L) despite falling ALT reflects the 'cholestatic phase' of recovery, where bile excretion remains impaired even as active hepatocellular necrosis subsides following MTX cessation."
-                    }
-                ],
-                "showHandles": true
-            }
-        },
-        "updatedAt": "2025-11-24T15:02:58.989Z"
-    },
-    {
-        "id": "key-events-track-1",
-        "type": "component",
-        "x": -1850,
-        "y": 5461,
-        "width": 2380,
-        "height": 300,
-        "componentType": "KeyEventsTrack",
-        "content": {
-            "props": {
-                "encounters": [
-                    {
-                        "encounter_no": 1,
-                        "date": "2024-03-05"
-                    },
-                    {
-                        "encounter_no": 2,
-                        "date": "2024-04-01"
-                    },
-                    {
-                        "encounter_no": 3,
-                        "date": "2024-05-06"
-                    },
-                    {
-                        "encounter_no": 4,
-                        "date": "2024-06-03"
-                    },
-                    {
-                        "encounter_no": 5,
-                        "date": "2024-07-15"
-                    },
-                    {
-                        "encounter_no": 6,
-                        "date": "2024-08-12"
-                    },
-                    {
-                        "encounter_no": 7,
-                        "date": "2024-08-15"
-                    }
-                ],
-                "events": [
-                    {
-                        "event": "Baseline Risk Identified",
-                        "t": "2024-03-05T10:15:00",
-                        "note": "ALT 78 detected. MTX deferred. MASLD suspected."
-                    },
-                    {
-                        "event": "MTX Initiation",
-                        "t": "2024-06-03T11:30:00",
-                        "note": "MTX started 7.5mg/week after LFT normalization."
-                    },
-                    {
-                        "event": "Missed Warning Signal",
-                        "t": "2024-07-15T14:00:00",
-                        "note": "ALT spiked to 185 (4.6x ULN). MTX reduced instead of stopped."
-                    },
-                    {
-                        "event": "Crisis Presentation",
-                        "t": "2024-08-12T09:30:00",
-                        "note": "Jaundice, dark urine, anorexia. ALT 490. MTX stopped."
-                    },
-                    {
-                        "event": "Hospital Admission",
-                        "t": "2024-08-12T14:00:00",
-                        "note": "Admitted for NAC infusion. USG confirms MASLD, rules out obstruction."
-                    },
-                    {
-                        "event": "Peak Cholestasis",
-                        "t": "2024-08-15T10:00:00",
-                        "note": "Bilirubin peaks at 190 µmol/L. Synthetic function preserved."
-                    }
-                ],
-                "showHandles": true
-            }
-        },
-        "updatedAt": "2025-11-24T15:04:53.593Z",
-        "description": "'Case :\n11. What other treatment options are available to Sarah Miller for her rheumatoid\narthritis, which does not affect the liver?\n\nGiven Sarah Miller’s severe Methotrexate-induced DILI, she now requires rheumatoid arthritis treatments that do not pose liver toxicity risks. The safest non-hepatotoxic options include Hydroxychloroquine, which has minimal hepatic metabolism and is considered one of the safest DMARDs for patients with liver impairment, and Sulfasalazine, which carries a very low risk of hepatotoxicity and is commonly used when Methotrexate is contraindicated. In more active disease, biologic agents such as TNF-α inhibitors (e.g., Etanercept, Adalimumab) or IL-6 inhibitors (e.g., Tocilizumab) are viable because they bypass hepatic metabolism and do not typically worsen underlying liver disease.\n\nShort-term low-dose corticosteroids may also be used as bridging therapy to control symptoms while transitioning to a safer long-term agent. These recommendations are consistent with the hepatology team’s plan in Encounter 7, where Methotrexate was permanently contraindicated and a referral was made to select a non-hepatotoxic DMARD alternative\n'"
     }
 ]

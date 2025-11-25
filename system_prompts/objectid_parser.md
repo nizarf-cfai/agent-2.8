@@ -52,11 +52,6 @@ RESOLUTION RULES
 EXAMPLES
 ----------------------------------------------------
 
-User Query: "show medication timeline"
-Context contains: id "dashboard-item-chronomed-2"
-→ Output:
-{"objectId": "dashboard-item-chronomed-2"}
-
 User Query: "latest lab result"
 Context contains:
 - "dashboard-item-1759906246155-lab-table"
@@ -71,17 +66,6 @@ Context contains:
 → Output:
 {"objectId": "dashboard-item-1759906246157-differential-diagnosis"}
 
-User Query: "lastest encounter"
-Context contains:
-- "dashboard-item-1759906300004-single-encounter-7"
-→ Output:
-{"objectId": "dashboard-item-1759906300004-single-encounter-7"}
-
-User Query: "first encounter"
-Context contains:
-- "dashboard-item-1759906300003-single-encounter-1"
-→ Output:
-{"objectId": "dashboard-item-1759906300003-single-encounter-1"}
 
 User Query: "From her other blood results, is there any evidence of liver cirrhosis?"
 Context contains:
@@ -97,34 +81,21 @@ Context contains:
 ```
 
 ---
+----------------------------------------------------
+SPECIAL CASE
+----------------------------------------------------
 
-## ✅ **How the Agent Will Be Called**
+User Query: "lastest encounter"
+→ Output:
+{"objectId": "dashboard-item-1759906300004-single-encounter-7"}
 
-Example input to the model:
+User Query: "first encounter"
+→ Output:
+{"objectId": "dashboard-item-1759906300003-single-encounter-1"}
 
-```
-User Query: "tell me medication timeline"
 
-Context:
-[
-  {
-    "objectId": "dashboard-item-1759906219477-adverse-event-analytics",
-    "title": "Adverse Event Analytics"
-  },
-  {
-    "objectId": "dashboard-item-chronomed-2",
-    "title": "Medication Timeline"
-  }
-]
-```
-
-**Expected Output:**
-
-```json
-{
-  "objectId": "dashboard-item-chronomed-2"
-}
-```
+User Query: "show medication timeline"
+→ Output:
+{"objectId": "dashboard-item-chronomed-2"}
 
 ---
-

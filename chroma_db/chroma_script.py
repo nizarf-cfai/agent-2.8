@@ -288,14 +288,14 @@ async def rag_from_json(query: str="", top_k: int = 10):
 
         # Run in parallel threads
         t1 = asyncio.create_task(block_rag(summary_objects_blocks, query, top_k=3))
-        t2 = asyncio.create_task(block_rag(raw_objects_blocks, query, top_k=7))
+        t2 = asyncio.create_task(block_rag(raw_objects_blocks, query, top_k=8))
         
         summary_res, raw_res = await asyncio.gather(t1, t2)
 
         context = summary_res + "\n\n" + raw_res
         
         with open(f"{config.output_dir}/rag_result.md", "w", encoding="utf-8") as f:
-            f.write(context)
+            f.write(f"Query : {query}\n\n" + context)
         return context
         
     except Exception as e:

@@ -1,80 +1,60 @@
 {
-    "id": "enhanced-todo-1764050427273-bsdfihrqb",
+    "id": "enhanced-todo-1764060984679-9jatgo7he",
     "type": "todo",
-    "x": 6480,
+    "x": 5860,
     "y": -2240,
     "width": 450,
     "height": "auto",
     "color": "#ffffff",
-    "description": "Retrieve blood test results to check for evidence of liver cirrhosis.",
+    "description": "Retrieve radiology diagnostic reports for clinical review, with validated filtering and structured verification.",
     "todoData": {
-        "title": "Liver Cirrhosis Evidence Retrieval",
-        "description": "Retrieve blood test results to check for evidence of liver cirrhosis.",
+        "title": "Radiology Diagnostic Report Retrieval",
+        "description": "Retrieve radiology diagnostic reports for clinical review, with validated filtering and structured verification.",
         "todos": [
             {
-                "id": "task-1001",
-                "text": "Prepare parameters for blood test retrieval",
-                "status": "pending",
-                "agent": "Clinical Agent",
-                "subTodos": [
-                    {
-                        "text": "Identify relevant blood test categories for liver function",
-                        "status": "pending"
-                    },
-                    {
-                        "text": "Specify patient identifier",
-                        "status": "pending"
-                    },
-                    {
-                        "text": "Set date range for blood tests if necessary",
-                        "status": "pending"
-                    },
-                    {
-                        "text": "Determine required status of test results (e.g., final)",
-                        "status": "pending"
-                    }
-                ]
-            },
-            {
-                "id": "task-1002",
-                "text": "curl -X GET 'https://api.bedfordshirehospitals.nhs.uk/fhir-prd/r4/Observation?patient=<UUID>&category=http://loinc.org|LP6480-9&status=final&_sort=-date&_count=10'",
+                "id": "task-48192",
+                "text": "Prepare radiology retrieval parameters",
                 "status": "pending",
                 "agent": "Data Analyst Agent",
                 "subTodos": [
                     {
-                        "text": "Execute HTTP request",
+                        "text": "Confirm patient UUID",
                         "status": "pending"
                     },
                     {
-                        "text": "Check HTTP status code",
+                        "text": "Set category=LP29684-5 for radiology",
                         "status": "pending"
                     },
                     {
-                        "text": "Validate structure of Observation entries",
+                        "text": "Apply modality filters for CT and MRI",
+                        "status": "pending"
+                    },
+                    {
+                        "text": "Apply status=final filter",
+                        "status": "pending"
+                    },
+                    {
+                        "text": "Sort newest first and limit count",
                         "status": "pending"
                     }
                 ]
             },
             {
-                "id": "task-1003",
-                "text": "Analyze blood test results for indicators of liver cirrhosis",
+                "id": "task-93127",
+                "text": "curl -X GET 'https://api.bedfordshirehospitals.nhs.uk/fhir-prd/r4/DiagnosticReport?patient=<UUID>&category=http://loinc.org|LP29684-5&date=ge2015-01-01&modality=http://dicom.nema.org/resources/ontology/DCM|CT&modality=http://dicom.nema.org/resources/ontology/DCM|MRI&status=final&_sort=-date&_count=5'",
                 "status": "pending",
-                "agent": "Clinical Agent",
+                "agent": "Consolidator Agent",
                 "subTodos": [
                     {
-                        "text": "Parse retrieved blood test data",
+                        "text": "Execute request",
                         "status": "pending"
                     },
                     {
-                        "text": "Identify specific biomarkers associated with liver cirrhosis (e.g., ALT, AST, Bilirubin, Albumin, Platelet count)",
+                        "text": "Validate HTTP response format",
                         "status": "pending"
                     },
                     {
-                        "text": "Compare biomarker values against established clinical thresholds",
-                        "status": "pending"
-                    },
-                    {
-                        "text": "Synthesize findings to determine evidence of liver cirrhosis",
+                        "text": "Extract and organize DiagnosticReport results",
                         "status": "pending"
                     }
                 ]
@@ -82,6 +62,6 @@
         ]
     },
     "rotation": 0,
-    "createdAt": "2025-11-25T06:00:27.581Z",
-    "updatedAt": "2025-11-25T06:00:27.581Z"
+    "createdAt": "2025-11-25T08:56:24.986Z",
+    "updatedAt": "2025-11-25T08:56:24.986Z"
 }
