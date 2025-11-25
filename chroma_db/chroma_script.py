@@ -274,6 +274,8 @@ async def rag_from_json(query: str="", top_k: int = 10):
                 summary_objects.append(d)
             elif 'dashboard-item' in d_id:
                 if d.get('type') == 'component':
+                    if d.get('id') in existing_desc_ids:
+                        d['description'] = object_desc_data.get(d.get('id'), '')
                     summary_objects.append(d)
             else:
                 pass
