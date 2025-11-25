@@ -43,7 +43,8 @@ def get_board_items():
         elif d.get('id') == "dashboard-item-chronomed-2":
             d['description'] = "This timeline functions similarly to a medication timeline, but with an expanded DILI assessment focus. It presents a chronological view of the patient’s clinical course, aligning multiple time-bound elements to support hepatotoxicity monitoring. Like the medication timeline tracks periods of drug exposure, this object also visualises medication start/stop dates, dose changes, and hepatotoxic risk levels. In addition, it integrates encounter history, longitudinal liver function test trends, and critical clinical events. Temporal relationships are highlighted to show how changes in medication correlate with laboratory abnormalities and clinical deterioration, providing causality links relevant to DILI analysis. The timeline is designed to facilitate retrospective assessment and ongoing monitoring by showing when key events occurred in relation to medication use and liver injury progression."
             content_object.append(d)
-
+        elif d.get('id') == "sidebar-1":
+            pass
 
         elif "content"in d.keys() or 'conversationHistory' in d.keys():
             if d.get('id') in existing_desc_ids:
