@@ -24,7 +24,7 @@ get_easl_answer
 - ONLY if the user explicitly says "EASL" OR "guideline".
 
 create_schedule
-- Used when the user asks to arrange schedule, plan, book investigations or tests.
+- Used when the user explicitly asks to arrange schedule, plan, book investigations or tests.
 - Examples: "schedule", "create schedule", "book".
 
 send_notification  
