@@ -1,7 +1,7 @@
 [
   {
     "id": "dashboard-item-1759906300003-single-encounter-1",
-    "description": "This is the first encounter in the patient's timeline. It is an Outpatient Visit recorded on March 5, 2024, with Dr. P. Stevens (General Practice). The patient, Sarah Miller (43, Female), presented with a chief complaint of increased fatigue over the past 4-5 months. The assessment revealed suboptimal control of Type 2 Diabetes Mellitus (HbA1c 58 mmol/mol) and Hypertension, alongside Chronic Fatigue Syndrome possibly related to Metabolic Dysfunction-associated Steatotic Liver Disease (MASLD). Physical exam noted a BMI of 32.0 (Class I obesity), BP 146/92 mmHg, and mild effusion in the right wrist due to Rheumatoid Arthritis. The plan involved ordering complete LFTs and HbA1c, with a follow-up scheduled in 4 weeks to evaluate eligibility for Methotrexate (MTX) therapy."
+    "description": "#first encounter #first encounter.\n This is the first encounter in the patient's timeline. It is an Outpatient Visit recorded on March 5, 2024, with Dr. P. Stevens (General Practice). The patient, Sarah Miller (43, Female), presented with a chief complaint of increased fatigue over the past 4-5 months. The assessment revealed suboptimal control of Type 2 Diabetes Mellitus (HbA1c 58 mmol/mol) and Hypertension, alongside Chronic Fatigue Syndrome possibly related to Metabolic Dysfunction-associated Steatotic Liver Disease (MASLD). Physical exam noted a BMI of 32.0 (Class I obesity), BP 146/92 mmHg, and mild effusion in the right wrist due to Rheumatoid Arthritis. The plan involved ordering complete LFTs and HbA1c, with a follow-up scheduled in 4 weeks to evaluate eligibility for Methotrexate (MTX) therapy."
   },
   {
     "id": "dashboard-item-1759906300004-single-encounter-2",
@@ -25,7 +25,7 @@
   },
   {
     "id": "dashboard-item-1759906300004-single-encounter-7",
-    "description": "This is the seventh and latest encounter recorded for the patient. It is an Inpatient visit at Hepatology Ward B on August 15, 2024. Dr. R. Sharma (Consultant Hepatologist) reviewed the patient on Day 3 of admission. The diagnosis was confirmed as Severe Drug-Induced Liver Injury (DILI) secondary to Methotrexate (RUCAM score 9/10) on a background of MASH. The patient remained significantly jaundiced (Bilirubin 190 μmol/L) but was alert (GCS 15) with no signs of hepatic encephalopathy. ALT levels were declining, and INR was stable. The management plan included Ursodeoxycholic Acid (UDCA) 500mg twice daily, daily INR evaluations, neurological checks, and a scheduled Fibroscan in three months. Rheumatology was advised to switch to non-hepatotoxic alternatives for RA."
+    "description": "#latest encounter #latest encounter.\n This is the seventh and latest encounter recorded for the patient. It is an Inpatient visit at Hepatology Ward B on August 15, 2024. Dr. R. Sharma (Consultant Hepatologist) reviewed the patient on Day 3 of admission. The diagnosis was confirmed as Severe Drug-Induced Liver Injury (DILI) secondary to Methotrexate (RUCAM score 9/10) on a background of MASH. The patient remained significantly jaundiced (Bilirubin 190 μmol/L) but was alert (GCS 15) with no signs of hepatic encephalopathy. ALT levels were declining, and INR was stable. The management plan included Ursodeoxycholic Acid (UDCA) 500mg twice daily, daily INR evaluations, neurological checks, and a scheduled Fibroscan in three months. Rheumatology was advised to switch to non-hepatotoxic alternatives for RA."
   },
   {
     "id" : "dashboard-item-1759853783245-patient-context",
