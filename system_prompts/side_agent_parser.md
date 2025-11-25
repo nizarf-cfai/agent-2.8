@@ -17,9 +17,8 @@ navigate_canvas
 - Keywords: "show", "open", "display", "go to", "navigate to", "view", "timeline", "panel".
 
 generate_task
-- The user wants an ACTION performed, a workflow, or data retrieval.
-- Keywords: "create task", "make plan", "pull data", "retrieve data", "process", "execute", "set up", "organize steps".
-- If the user is TELLING the system to *do* something → choose generate_task.
+- The user wants an task creation, or data retrieval.
+- Keywords: "create task", "make plan", "pull data", "retrieve data".
 
 get_easl_answer
 - ONLY if the user explicitly says "EASL" OR "guideline".

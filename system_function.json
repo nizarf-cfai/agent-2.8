@@ -1,13 +1,13 @@
 [
     {
         "name": "get_query",
-        "description": "Extract user query.",
+        "description": "Extract full user query.",
         "parameters": {
             "type": "OBJECT",
             "properties": {
                 "query": {
                     "type": "STRING",
-                    "description": "User query."
+                    "description": "Full user query. Query must in english, and medical related."
                 }
             },
             "required": ["query"]
